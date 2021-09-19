@@ -1,0 +1,297 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+:root {
+    --meny-size: 25px;
+    --headline-fonts: "Menlo","Arial", sans-serif;
+    --body-fonts: "VT323", "Courier", "Roboto", "Arial", sans-serif;
+    --main-gray: dimgray;
+    --main-bluegray: #3a3d40;
+    --main-white: white;
+    --main-blue: #2f3f4f;
+    --height: 100vh;
+    --height-auto: auto;
+    --height-90: 85vh;
+    --BGcolor: #262822;
+    --BGcolor: linear-gradient(#262822 70%, black 100%)
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  max-width: 320px;
+  height: 100vh;
+  font-family: var(--body-fonts);
+  color: white;
+  background: var(--BGcolor);
+  /* background: url(sonyMonitorTiny.png) no-repeat center center fixed;
+  background-size: cover; */
+
+}
+
+/* Background image */
+
+.bgcontainer {
+  display: inline-block;
+  margin: red solid 1px;
+  /* align-items: center;
+  justify-content: center; */
+  position: absolute;
+  z-index: -10;
+  width: 320px;
+  max-width: 320px;
+  height: 100vh;
+  max-height: 568px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  line-height: 300px;
+}
+
+.imgtest {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  max-width: 140%;
+
+}
+
+/* Interface menu */
+
+.navbar {
+  display: block;
+  position: relative;
+  top: 15vh;
+  background-color: white;
+
+}
+
+.navbar > ul > li > a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-size: 1.1em;
+}
+
+.navbar > ul > li > a:hover{
+  background-color: black;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+h1{
+  font-size: 1.2em;
+}
+
+.sectionA {
+  display: block;
+  position: relative;
+  top: 15vh;
+  width: 320px;
+  overflow: hidden;
+
+}
+
+.headline {
+    width: 12em;
+    position: relative;
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    font-size: 2em;
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+}
+
+/* Animation */
+.terminal1 {
+    animation: typewriter 1s steps(25) 500ms 1 normal both,
+               blinkTextCursor 400ms steps(30) 13 normal,
+               fadeOutCursor 500ms 1.8s ease-out forwards;
+  
+  }
+  @keyframes typewriter {
+    from{width: 0;}
+    to{width: 6.5em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor {
+      to{border-right-color: transparent;}
+  }
+  
+  @keyframes fadein {
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+  
+
+p {
+  color: white;
+}
+
+  .info1 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    font-size: 100%;
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+  }
+
+  .terminal2 {
+    animation:
+        typewriter2 1s steps(35) 3s 1 normal both,
+        blinkTextCursor2 400ms steps(35) 2s 13 normal,
+        fadeOutCursor 500ms 4s ease-out forwards;
+  
+  }
+  @keyframes typewriter2 {
+    from{width: 0;}
+    to{width: 22.2em;}
+  }
+  @keyframes blinkTextCursor2{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor2 {
+      to{border-right-color: transparent;}
+  }
+  
+  @keyframes fadein2 {
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+
+  .info2 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    font-size: 100%;
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+  }
+
+  .terminal3 {
+    animation:
+        typewriter2 1s steps(35) 5s 1 normal both,
+        blinkTextCursor2 500ms steps(35) 6s 13 normal,
+        fadeOutCursor 1s 7s ease-out forwards;
+  
+  }
+  @keyframes typewriter2 {
+    from{width: 0;}
+    to{width: 22.2em;}
+  }
+  @keyframes blinkTextCursor2{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor2 {
+      to{border-right-color: transparent;}
+  }
+  
+  @keyframes fadein2 {
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+
+  .info3 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    font-size: 100%;
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+  }
+
+  .terminal4 {
+    animation:
+        typewriter2 1s steps(35) 8s 1 normal both,
+        blinkTextCursor2 500ms steps(35) 8s normal,
+        fadeOutCursor 1s 7s ease-out forwards;
+  
+  }
+  @keyframes typewriter2 {
+    from{width: 0;}
+    to{width: 22.2em;}
+  }
+  @keyframes blinkTextCursor2{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor2 {
+      to{border-right-color: transparent;}
+  }
+  
+  @keyframes fadein2 {
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+
+  .info4 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    font-size: 100%;
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+  }
+
+  .terminal5 {
+    animation:
+        typewriter2 1s steps(35) 10s 1 normal both,
+        blinkTextCursor2 500ms steps(35) 10s 13 normal,
+        fadeOutCursor 1s 7s ease-out forwards;
+  
+  }
+  @keyframes typewriter2 {
+    from{width: 0;}
+    to{width: 22.2em;}
+  }
+  @keyframes blinkTextCursor2{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor2 {
+      to{border-right-color: transparent;}
+  }
+  
+  @keyframes fadein2 {
+      from{opacity: 1;}
+      to{opacity: 0;}
+  }
