@@ -172,7 +172,7 @@ h1{
   }
   @keyframes typewriter {
     from{width: 0;}
-    to{width: 12em;}
+    to{width: 10em;}
   }
   @keyframes blinkTextCursor{
     from{border-right-color: transparent;}
