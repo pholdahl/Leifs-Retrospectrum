@@ -474,16 +474,49 @@ display: none;
   @keyframes fadeOutCursor10{
       to{border-right-color: transparent;}
   }
- 
+
+.info10 {
+  width: 12em;
+  display: block;
+  position: relative;
+  /* margin: 0 auto; */
+  border-right: 3px solid rgba(0, 0, 0, 0);
+  /* font-size: 100%; */
+  /* text-align: center; */
+  white-space: nowrap;
+  overflow: hidden;
+  /* transform: translateY(-50%);     */
+}
+
+.terminal11 {
+  animation:
+      typewriter11 1s steps(2) 13.6s 1 normal both,
+      blinkTextCursor11 400ms steps(2) 13.4s infinite normal;
+      /* fadeOutCursor10 500ms 14s ease-out forwards; */
+
+}
+@keyframes typewriter11 {
+  from{width: 0;}
+  to{width: 0.2em;}
+}
+@keyframes blinkTextCursor11{
+  from{border-right-color: transparent;}
+  to{border-right-color: var(--main-white);}
+}
+
+/* @keyframes fadeOutCursor10{
+    to{border-right-color: transparent;}
+} */
+
 .turndevice {
-  display: none;
-  border: green solid 1px;
-  text-align: center;
+display: none;
+border: green solid 1px;
+text-align: center;
 }
 
 .turndevice > p {
-  display: inline-block;
-  color: white;
+display: inline-block;
+color: white;
 }
 
   @media only screen 
