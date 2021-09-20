@@ -339,8 +339,8 @@ p {
     } */
 
   @media only screen 
-  and (min-device-width: 414px)
-  and (max-device-width: 736px)
+  and (min-width: 414px)
+  and (max-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3){
     body {
       width: 414px;
@@ -348,8 +348,8 @@ p {
   }
 
   @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+  and (min-width: 375px) 
+  and (max-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2){
     body {
       width: 375px;
