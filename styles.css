@@ -66,6 +66,7 @@ body {
 /* Interface menu */
 
 header {
+  display: block;
   width: auto;
   border: solid red 1px;
 }
