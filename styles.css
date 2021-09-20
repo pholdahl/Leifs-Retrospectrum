@@ -57,7 +57,7 @@ body {
   z-index: -10;
   width: 100%;
   height: 100vh;
-  padding: 0;
+  /* padding: 0; */
   overflow: hidden;
   text-align: center;
   line-height: 300px;
@@ -376,8 +376,8 @@ p {
     html {
       transform: rotate(-90deg);
       transform-origin: left top;
-      width: 100vh;
-      height: 700px;
+      /* width: 100vh; */
+      /* height: 700px; */
       /* height: 200px; */
       overflow-x: hidden;
       position: absolute;
@@ -385,7 +385,8 @@ p {
       left: 0;
     }
 
-    body {
+    /* body {
       height: 100%;
+      width: 100%;
     }
-  }
+  } */
