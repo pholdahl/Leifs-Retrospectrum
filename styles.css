@@ -397,12 +397,12 @@ p {
     }
 
 
-    /* 
+    
     body {
-      height: 700px;
-      width: 700px;
+      height: 200vh;
+      /* width: 700px; */
     }
-    .bgcontainer {
+    /* .bgcontainer {
       height: auto;
       width: auto;
     } */
