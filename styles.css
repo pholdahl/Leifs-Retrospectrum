@@ -395,7 +395,8 @@ p {
     }
 
     body {
-      height: 701px;
+      height: 700px;
+      width: 700px;
     }
     .bgcontainer {
       height: auto;
