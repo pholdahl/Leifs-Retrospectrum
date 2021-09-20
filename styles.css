@@ -339,6 +339,7 @@ p {
   display: block;
   position: relative;
   color: white;
+  transform: rotate(-90deg);
 }
 
 
