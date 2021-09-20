@@ -398,6 +398,7 @@ p {
       height: 701px;
     }
     .bgcontainer {
-      height: 600px;
+      height: auto;
+      width: auto;
     }
   }
