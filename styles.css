@@ -326,7 +326,8 @@ p {
     }
   } */
 
-  @media screen and (max-width: 414px) and (orientation: landscape){
+
+    /* and (orientation: landscape){
     html {
       transform: rotate(-90deg);
       transform-origin: left top;
@@ -335,23 +336,21 @@ p {
       position: absolute;
       top: 100%;
       left: 0;
-    }
+    } */
 
+  @media only screen 
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3){
     body {
       width: 414px;
     }
   }
 
-  @media screen and (max-width: 375px) and (orientation: landscape){
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2){
     body {
       width: 375px;
     }
