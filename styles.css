@@ -377,9 +377,9 @@ p {
       transform: rotate(-90deg);
       transform-origin: left top;
       width: 100vh;
-      height: 500px;
+      height: 700px;
       /* height: 200px; */
-      /* overflow-x: hidden; */
+      overflow-x: hidden;
       position: absolute;
       top: 100%;
       left: 0;
