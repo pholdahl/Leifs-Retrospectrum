@@ -379,6 +379,7 @@ p {
       -o-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
       transform: rotate(-90deg);
+      transform-origin: left top;
       position: absolute;
       top: 100%;
       left: 0;
@@ -393,6 +394,9 @@ p {
     }
 
     body {
+      height: 700px;
+    }
+    .bgcontainer {
       height: 700px;
     }
   }
