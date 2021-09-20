@@ -365,7 +365,8 @@ p {
 
   @media only screen and (orientation: landscape){
     html {
-      width: 375px;
+      width: 100%;
+      height: 100%;
       transform: rotate(-90deg);
     }
   }
