@@ -326,8 +326,7 @@ p {
     }
   } */
 
-
-    and (orientation: landscape){
+    /* and (orientation: landscape){
     html {
       transform: rotate(-90deg);
       transform-origin: left top;
@@ -336,41 +335,24 @@ p {
       position: absolute;
       top: 100%;
       left: 0;
-    }
+    } */
+
+  /* and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) */
 
   @media only screen 
-  and (min-width: 414px)
-  and (max-width: 736px)
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape){
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
+  and (min-width: 375px) 
+  and (max-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2){
     body {
-      width: 414px;
+      width: 375px;
     }
   }
 
   @media only screen 
-  and (min-width: 375px) 
-  and (max-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
+  and (min-width: 414px)
+  and (max-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2){
     body {
-      width: 375px;
+      width: 414px;
     }
   }
