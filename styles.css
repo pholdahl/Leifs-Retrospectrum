@@ -376,11 +376,16 @@ p {
     html {
       transform: rotate(-90deg);
       transform-origin: left top;
-      width: 100%;
-      height: 100vh;
+      width: 100vh;
+      height: 500px;
+      /* height: 200px; */
       /* overflow-x: hidden; */
       position: absolute;
       top: 100%;
       left: 0;
+    }
+
+    body {
+      height: 100%;
     }
   }
