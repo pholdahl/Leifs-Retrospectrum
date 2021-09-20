@@ -179,7 +179,7 @@ display: none;
   }
   @keyframes typewriter2 {
     from{width: 0;}
-    to{width: 13.2em;}
+    to{width: 14.5em;}
   }
   @keyframes blinkTextCursor2{
     from{border-right-color: transparent;}
