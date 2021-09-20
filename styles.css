@@ -137,7 +137,7 @@ h1{
 }
 
 .sectionB {
-  position: relative;
+  position: absolute;
   top: 500px;
 }
 
@@ -350,6 +350,7 @@ p {
   and (-webkit-min-device-pixel-ratio: 2){
     body {
       width: 375px;
+      height: 667px;
     }
   }
 
