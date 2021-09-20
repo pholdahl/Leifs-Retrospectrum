@@ -135,9 +135,32 @@ h1{
     white-space: nowrap;
     overflow: hidden;
 }
+ /* Knappeseksjonen må justeres manuelt i @media */
+.sectionB{
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+  height: 6em;
+  width: 100%;
+  border: red solid 2px;
+}
 
-.sectionB {
-display: none;
+.imagebutton {
+  /* display: block; */
+  /* width: 8em;
+  height: 4em;
+  background-color: rgba(153, 205, 50, 0.345); */
+}
+
+.makerbutton {
+  display: block;
+  width: 8em;
+  background-color: rgba(0, 0, 255, 0.228);
+}
+
+.sectionC {
+  height: 2em;
 }
 
 /* Animation */
