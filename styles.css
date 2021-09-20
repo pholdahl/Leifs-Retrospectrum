@@ -394,7 +394,9 @@ p {
 
   @media only screen and (orientation: landscape){
     .turndevice{
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       -webkit-transform: rotate(-90deg);
       -moz-transform: rotate(-90deg);
       -o-transform: rotate(-90deg);
@@ -404,6 +406,8 @@ p {
       position: absolute;
       top: 100%;
       left: 0;
+      width: 1000px;
+      height: 1000px;
     }
 
     .bgcontainer,
