@@ -320,8 +320,6 @@ display: none;
   color: white;
 }
 
-
-
   /* @media only screen and (min-device-width: 375px) and (max-device-width: 375px) 
   and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71){
     }
@@ -379,13 +377,18 @@ display: none;
       align-items: center;
       position: absolute;
       top: 0;
-      background-color: red;
+      right: 0;
+      background-color: black;
       width: 100%;
       height: 100%;
       /* top: 0;
       left: 0;
       bottom: 0;
       right: 0; */
+    }
+
+    body{
+      width: 100%;
     }
 
     /* html{
