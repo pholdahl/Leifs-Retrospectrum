@@ -329,6 +329,12 @@ p {
   @media (max-width: 414px) and (orientation: landscape){
     html {
       transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
 
     body {
@@ -336,10 +342,15 @@ p {
     }
   }
 
-
   @media (max-width: 375px)  and (orientation: landscape){
     html {
       transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
     body {
       width: 375px;
