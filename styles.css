@@ -326,11 +326,6 @@ p {
     }
   } */
 
-  @media screen (orientation: landscape){
-    transform: rotate(-90deg);
-  }
-
-
   @media (max-width: 414px) and (orientation: landscape){
     html {
       transform: rotate(-90deg);
