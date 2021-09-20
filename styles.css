@@ -136,6 +136,11 @@ h1{
     /* transform: translateY(-50%);     */
 }
 
+.sectionB {
+  position: relative;
+  top: 500px;
+}
+
 /* Animation */
 .terminal1 {
     animation: typewriter 1s steps(25) 500ms 1 normal both,
