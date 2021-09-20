@@ -112,8 +112,15 @@ main {
   /* overflow: hidden; */
 }
 
+
 .sectionA > p{
   font-size: 1.2em;
+}
+
+.sectionA a {
+  text-decoration: none;
+  text-decoration: underline;
+  color: var(--main-white);
 }
 
 h1{
