@@ -18,21 +18,28 @@
 * {
   margin: 0px;
   padding: 0px;
+  z-index: 1;
 }
 
-html{
+/* html{
   background-color: black;
-}
+} */
 
 body {
+  position: relative;
+  font-size: 1em;
   border: solid red 1px;
   width: 320px;
   height: 100vh;
   font-family: var(--body-fonts);
   color: white;
   background: var(--BGcolor);
-  /* background: url(sonyMonitorTiny.png) no-repeat center center fixed;
-  background-size: cover; */
+  /* z-index: 1; */
+  /* background: url(sonyMonitorTiny.png);
+  background-size: 320px;
+  background-repeat: no-repeat;
+  background-position: center; */
+
 
 }
 
@@ -44,12 +51,11 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  /* border: red solid 1px; */
-  /* align-items: center;
-  justify-content: center; */
+  border: red solid 1px;
+  /* align-items: center; */
   position: absolute;
   z-index: -10;
-  width: 320px;
+  width: 100%;
   height: 100vh;
   padding: 0;
   overflow: hidden;
@@ -57,7 +63,7 @@ body {
   line-height: 300px;
 }
 
-.imgtest {
+.bgimg {
   display: block;
   position: relative;
   /* top: 50%;
@@ -73,10 +79,12 @@ header {
   display: block;
   width: auto;
   border: solid red 1px;
+  width: 100%;
 }
 
 .navbar {
-  max-width: 100%;
+  /* max-width: 100%; */
+  width: 100%;
   display: block;
   position: relative;
   top: 10vh;
@@ -98,6 +106,7 @@ header {
 }
 
 ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -309,12 +318,15 @@ p {
       to{opacity: 0;}
   }
 
-  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+  /* @media only screen and (min-device-width: 375px) and (max-device-width: 375px) 
   and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71){
     .bgcontainer {
-      width: 320px;
+      width: 375px;
     }
-  }
+    body {
+      width: 375px;
+    }
+  } */
 /* 
 
   @media (max-width: 375px) {
