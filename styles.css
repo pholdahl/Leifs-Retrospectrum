@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
 
 :root {
-    --meny-size: 25px;
+    --meny-size: 1.3em;
     --headline-fonts: "Menlo","Arial", sans-serif;
     --body-fonts: "VT323", "Courier", "Roboto", "Arial", sans-serif;
     --main-gray: dimgray;
@@ -93,7 +93,7 @@ ul {
   text-decoration: none;
   color: black;
   background-color: white;
-  font-size: 1.2em;
+  font-size: var(--meny-size);
 }
 
 .navbar > ul > li > a:hover{
@@ -106,11 +106,14 @@ main {
 }
 
 .sectionA {
-  display: block;
+  /* display: block; */
   width: 100%;
-  overflow: hidden;
-  
+  padding-left: .5em;
+  /* overflow: hidden; */
+}
 
+.sectionA > p{
+  font-size: 1.2em;
 }
 
 h1{
@@ -133,13 +136,13 @@ display: none;
 /* Animation */
 .terminal1 {
     animation: typewriter 1s steps(25) 500ms 1 normal both,
-               blinkTextCursor 400ms steps(30) 13 normal,
+               blinkTextCursor 400ms steps(25) 13 normal,
                fadeOutCursor 500ms 1.8s ease-out forwards;
   
   }
   @keyframes typewriter {
     from{width: 0;}
-    to{width: 6.5em;}
+    to{width: 8em;}
   }
   @keyframes blinkTextCursor{
     from{border-right-color: transparent;}
@@ -150,18 +153,17 @@ display: none;
       to{border-right-color: transparent;}
   }
   
-  @keyframes fadein {
+  /* @keyframes fadein {
       from{opacity: 0;}
       to{opacity: 1;}
-  }
+  } */
 
   .info1 {
-    width: 12em;
+    width: 8em;
     display: block;
-    position: relative;
+    /* position: relative; */
     /* margin: 0 auto; */
     border-right: 3px solid rgba(0, 0, 0, 0);
-    font-size: 100%;
     /* text-align: center; */
     white-space: nowrap;
     overflow: hidden;
@@ -170,14 +172,14 @@ display: none;
 
   .terminal2 {
     animation:
-        typewriter2 1s steps(35) 3s 1 normal both,
-        blinkTextCursor2 400ms steps(35) 2s 13 normal,
-        fadeOutCursor 500ms 4s ease-out forwards;
+        typewriter2 1s steps(25) 2.5s 1 normal both,
+        blinkTextCursor2 400ms steps(25) 2s 13 normal,
+        fadeOutCursor2 500ms 3.6s ease-out forwards;
   
   }
   @keyframes typewriter2 {
     from{width: 0;}
-    to{width: 22.2em;}
+    to{width: 13.2em;}
   }
   @keyframes blinkTextCursor2{
     from{border-right-color: transparent;}
@@ -188,18 +190,17 @@ display: none;
       to{border-right-color: transparent;}
   }
   
-  @keyframes fadein2 {
+  /* @keyframes fadein2 {
       from{opacity: 0;}
       to{opacity: 1;}
-  }
+  } */
 
   .info2 {
     width: 12em;
     display: block;
-    position: relative;
+    /* position: relative; */
     /* margin: 0 auto; */
     border-right: 3px solid rgba(0, 0, 0, 0);
-    font-size: 100%;
     /* text-align: center; */
     white-space: nowrap;
     overflow: hidden;
@@ -208,28 +209,28 @@ display: none;
 
   .terminal3 {
     animation:
-        typewriter2 1s steps(35) 5s 1 normal both,
-        blinkTextCursor2 500ms steps(35) 6s 13 normal,
-        fadeOutCursor 1s 7s ease-out forwards;
+        typewriter3 1s steps(25) 4s 1 normal both,
+        blinkTextCursor3 400ms steps(25) 3.5s 13 normal,
+        fadeOutCursor3 500ms 4.8s ease-out forwards;
   
   }
-  @keyframes typewriter2 {
+  @keyframes typewriter3 {
     from{width: 0;}
-    to{width: 22.2em;}
+    to{width: 15em;}
   }
-  @keyframes blinkTextCursor2{
+  @keyframes blinkTextCursor3{
     from{border-right-color: transparent;}
     to{border-right-color: var(--main-white);}
   }
   
-  @keyframes fadeOutCursor2 {
+  @keyframes fadeOutCursor3 {
       to{border-right-color: transparent;}
   }
   
-  @keyframes fadein2 {
+  /* @keyframes fadein3 {
       from{opacity: 0;}
       to{opacity: 1;}
-  }
+  } */
 
   .info3 {
     width: 12em;
@@ -246,28 +247,28 @@ display: none;
 
   .terminal4 {
     animation:
-        typewriter2 1s steps(35) 8s 1 normal both,
-        blinkTextCursor2 500ms steps(35) 8s normal,
-        fadeOutCursor 1s 7s ease-out forwards;
+        typewriter4 1s steps(25) 5s 1 normal both,
+        blinkTextCursor4 400ms steps(25) 5.2s normal,
+        fadeOutCursor4 500ms 6.5s ease-out forwards;
   
   }
-  @keyframes typewriter2 {
+  @keyframes typewriter4 {
     from{width: 0;}
-    to{width: 22.2em;}
+    to{width: 15em;}
   }
-  @keyframes blinkTextCursor2{
+  @keyframes blinkTextCursor4{
     from{border-right-color: transparent;}
     to{border-right-color: var(--main-white);}
   }
   
-  @keyframes fadeOutCursor2 {
+  @keyframes fadeOutCursor4 {
       to{border-right-color: transparent;}
   }
   
-  @keyframes fadein2 {
+  /* @keyframes fadein4 {
       from{opacity: 0;}
       to{opacity: 1;}
-  }
+  } */
 
   .info4 {
     width: 12em;
@@ -275,7 +276,7 @@ display: none;
     position: relative;
     /* margin: 0 auto; */
     border-right: 3px solid rgba(0, 0, 0, 0);
-    font-size: 100%;
+    /* font-size: 100%; */
     /* text-align: center; */
     white-space: nowrap;
     overflow: hidden;
@@ -284,29 +285,196 @@ display: none;
 
   .terminal5 {
     animation:
-        typewriter2 1s steps(35) 10s 1 normal both,
-        blinkTextCursor2 500ms steps(35) 10s 13 normal,
-        fadeOutCursor 1s 7s ease-out forwards;
+        typewriter5 1s steps(35) 6.3s 1 normal both,
+        blinkTextCursor5 400ms steps(35) 6s 13 normal,
+        fadeOutCursor5 500ms 7.5s ease-out forwards;
   
   }
-  @keyframes typewriter2 {
+  @keyframes typewriter5 {
     from{width: 0;}
-    to{width: 22.2em;}
+    to{width: 12em;}
   }
-  @keyframes blinkTextCursor2{
+  @keyframes blinkTextCursor5{
     from{border-right-color: transparent;}
     to{border-right-color: var(--main-white);}
   }
   
-  @keyframes fadeOutCursor2 {
+  @keyframes fadeOutCursor5 {
       to{border-right-color: transparent;}
   }
   
-  @keyframes fadein2 {
+  /* @keyframes fadein5 {
       from{opacity: 1;}
       to{opacity: 0;}
+  } */
+
+
+
+  .info5 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    /* font-size: 100%; */
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
   }
 
+  .terminal6 {
+    animation:
+        typewriter6 1s steps(25) 8s 1 normal both,
+        blinkTextCursor6 400ms steps(25) 7.5s 13 normal,
+        fadeOutCursor6 500ms 9s ease-out forwards;
+  
+  }
+  @keyframes typewriter6 {
+    from{width: 0;}
+    to{width: 12em;}
+  }
+  @keyframes blinkTextCursor6{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor6{
+      to{border-right-color: transparent;}
+  }
+
+  .info6 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    /* font-size: 100%; */
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+  }
+
+  .terminal7 {
+    animation:
+        typewriter7 1s steps(10) 9.2s 1 normal both,
+        blinkTextCursor7 400ms steps(15) 9.1s 13 normal,
+        fadeOutCursor7 500ms 9.8s ease-out forwards;
+  
+  }
+  @keyframes typewriter7 {
+    from{width: 0;}
+    to{width: 4em;}
+  }
+  @keyframes blinkTextCursor7{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor7{
+      to{border-right-color: transparent;}
+  }
+  
+  .info7 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    /* font-size: 100%; */
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+  }
+
+  .terminal8 {
+    animation:
+        typewriter8 1s steps(10) 10.2s 1 normal both,
+        blinkTextCursor8 400ms steps(35) 10s 13 normal,
+        fadeOutCursor8 500ms 11s ease-out forwards;
+  
+  }
+  @keyframes typewriter8 {
+    from{width: 0;}
+    to{width: 4em;}
+  }
+  @keyframes blinkTextCursor8{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor8{
+      to{border-right-color: transparent;}
+  }
+
+  .info8 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    /* font-size: 100%; */
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+  }
+
+  .terminal9 {
+    animation:
+        typewriter9 1s steps(15) 11.5s 1 normal both,
+        blinkTextCursor9 400ms steps(15) 11.2s 13 normal,
+        fadeOutCursor9 500ms 12.2s ease-out forwards;
+  
+  }
+  @keyframes typewriter9 {
+    from{width: 0;}
+    to{width:12em;}
+  }
+  @keyframes blinkTextCursor9{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor9{
+      to{border-right-color: transparent;}
+  }
+ 
+  .info9 {
+    width: 12em;
+    display: block;
+    position: relative;
+    /* margin: 0 auto; */
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    /* font-size: 100%; */
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+  }
+
+  .terminal10 {
+    animation:
+        typewriter10 1s steps(15) 12.8s 1 normal both,
+        blinkTextCursor10 400ms steps(15) 12.5s 13 normal,
+        fadeOutCursor10 500ms 13.2s ease-out forwards;
+  
+  }
+  @keyframes typewriter10 {
+    from{width: 0;}
+    to{width: 12em;}
+  }
+  @keyframes blinkTextCursor10{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
+  
+  @keyframes fadeOutCursor10{
+      to{border-right-color: transparent;}
+  }
+ 
 .turndevice {
   display: none;
   border: green solid 1px;
@@ -318,44 +486,14 @@ display: none;
   color: white;
 }
 
-  /* @media only screen and (min-device-width: 375px) and (max-device-width: 375px) 
-  and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71){
-    }
-    body {
-      width: 375px;
-    }
-  } */
-
-    /* and (orientation: landscape){
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    } */
-
-  /* and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) */
-
   @media only screen 
   and (min-width: 375px) 
   and (max-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2){
     body {
       width: 375px;
-      /* height: 667px; */
     }
   }
-
-  /* @media only screen 
-  and (min-width: 667px) 
-  and (max-width: 375px)
-  and (-webkit-min-device-pixel-ratio: 2){
-    body {
-      width: 667px;
-      /* height: 667px; */
 
   @media only screen 
   and (min-width: 414px)
@@ -363,7 +501,6 @@ display: none;
   and (-webkit-min-device-pixel-ratio: 2){
     body {
       width: 414px;
-      /* height: 736px; */
     }
   }
 
