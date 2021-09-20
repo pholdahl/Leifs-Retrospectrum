@@ -362,3 +362,10 @@ p {
       width: 414px;
     }
   }
+
+  @media only screen and (orientation: landscape){
+    html {
+      width: 375px;
+      transform: rotate(-90deg);
+    }
+  }
