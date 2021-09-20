@@ -325,22 +325,18 @@ p {
   }
 
 .turndevice {
-  background: black;
-  z-index: 10;
   display: none;
-  position: absolute;
-  top: 500px;
-  width: 100%;
-  height: 100%;
+  border: green solid 1px;
+  position: relative;
   text-align: center;
 }
 
 .turndevice > p {
-  display: block;
-  position: relative;
+  display: inline-block;
+  position: fixed;
   color: white;
-  transform: rotate(-90deg);
 }
+
 
 
   /* @media only screen and (min-device-width: 375px) and (max-device-width: 375px) 
@@ -397,32 +393,39 @@ p {
       display: flex;
       justify-content: center;
       align-items: center;
-      -webkit-transform: rotate(90deg);
+      /* -webkit-transform: rotate(90deg);
       -moz-transform: rotate(90deg);
       -o-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-      /* transform-origin: left top; */
+      transform: rotate(90deg); */
+      transform-origin: left top;
       position: absolute;
+      background-color: red;
       top: 0;
       left: 0;
-      width: 100%;
+      bottom: 0;
+      right: 0;
+    }
+
+    /* html{
       height: 100%;
-    }
+      background-color: blue;
+    } */
 
-    body{
-      display: hidden;
-    }
+    /* body{
+      display: none;
+      max-width: 1196px;
+      max-height: 672px;
+    } */
 
-    .bgcontainer,
+    /* .bgcontainer,
     header,
     main,
     footer {
-      display: none;
+      display: none; */
       /* width: 700px; */
     }
     /* .bgcontainer {
       height: auto;
       width: auto;
     } */
-  }
