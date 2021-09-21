@@ -583,6 +583,9 @@ color: white;
     body{
       width: 100%;
     }
+    .hide {
+      display: none;
+    }
 
     /* html{
       height: 100%;
