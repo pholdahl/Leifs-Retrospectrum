@@ -146,12 +146,12 @@ h1{
   border: red solid 2px;
 }
 
-.imagebutton {
+/* .imagebutton { */
   /* display: block; */
   /* width: 8em;
   height: 4em;
   background-color: rgba(153, 205, 50, 0.345); */
-}
+/* } */
 
 .makerbutton {
   display: block;
@@ -584,6 +584,7 @@ color: white;
       width: 100%;
     }
     .hide {
+      visibility: hidden;
       display: none;
     }
 
