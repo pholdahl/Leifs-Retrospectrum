@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=VT323);
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 :root {
     --menu-size: 1.3rem;
@@ -253,10 +254,10 @@ h1{
 .postit-2 > figcaption {
   position: relative;
   white-space: pre;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Caveat', cursive;
   transform: rotateZ(17deg);
   font-size: 0.8rem;
-  word-spacing: -4px;
+  word-spacing: 1px;
   letter-spacing: 1px;
   line-height: 0.7rem;
   color: black;
