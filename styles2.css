@@ -343,7 +343,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter {
     from{width: 0;}
-    to{width: 9em;}
+    to{width: 16rem;}
   }
   @keyframes blinkTextCursor{
     from{border-right-color: transparent;}
@@ -360,23 +360,21 @@ text-shadow: 0px 0px 6px white;
   } */
 
   .infoAll {
-
-  }
-
-
-
-  .info1 {
-    font-size: 1.3rem;
-    width: 8em;
+    font-size: 1.2rem;
     display: block;
-    /* position: relative; */
-    /* margin: 0 auto; */
     border-right: 3px solid rgba(0, 0, 0, 0);
-    /* text-align: center; */
     white-space: nowrap;
     overflow: hidden;
-    /* transform: translateY(-50%);     */
   }
+
+
+
+  /* .info1 {
+    display: block;
+    border-right: 3px solid rgba(0, 0, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+  } */
 
   .terminal2 {
     animation:
@@ -387,7 +385,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter2 {
     from{width: 0;}
-    to{width: 14.5em;}
+    to{width: 16.2rem;}
   }
   @keyframes blinkTextCursor2{
     from{border-right-color: transparent;}
@@ -403,16 +401,16 @@ text-shadow: 0px 0px 6px white;
       to{opacity: 1;}
   } */
 
-  .info2 {
-    width: 1rem;
+  /* .info2 {
+
     display: block;
-    /* margin: 0 auto; */
+
     border-right: 3px solid rgba(0, 0, 0, 0);
-    /* text-align: center; */
+
     white-space: nowrap;
     overflow: hidden;
-    /* transform: translateY(-50%);     */
-  }
+
+  } */
 
   .terminal3 {
     animation:
@@ -434,23 +432,6 @@ text-shadow: 0px 0px 6px white;
       to{border-right-color: transparent;}
   }
   
-  /* @keyframes fadein3 {
-      from{opacity: 0;}
-      to{opacity: 1;}
-  } */
-
-  .info3 {
-    width: 1rem;
-    display: block;
-    /* margin: 0 auto; */
-    border-right: 3px solid rgba(0, 0, 0, 0);
-    /* font-size: 100%; */
-    /* text-align: center; */
-    white-space: nowrap;
-    overflow: hidden;
-    /* transform: translateY(-50%);     */
-  }
-
   .terminal4 {
     animation:
         typewriter4 1s steps(25) 5s 1 normal both,
@@ -469,24 +450,6 @@ text-shadow: 0px 0px 6px white;
   
   @keyframes fadeOutCursor4 {
       to{border-right-color: transparent;}
-  }
-  
-  /* @keyframes fadein4 {
-      from{opacity: 0;}
-      to{opacity: 1;}
-  } */
-
-  .info4 {
-    width: 12em;
-    display: block;
-    position: relative;
-    /* margin: 0 auto; */
-    border-right: 3px solid rgba(0, 0, 0, 0);
-    /* font-size: 100%; */
-    /* text-align: center; */
-    white-space: nowrap;
-    overflow: hidden;
-    /* transform: translateY(-50%);     */
   }
 
   .terminal5 {
@@ -508,26 +471,6 @@ text-shadow: 0px 0px 6px white;
   @keyframes fadeOutCursor5 {
       to{border-right-color: transparent;}
   }
-  
-  /* @keyframes fadein5 {
-      from{opacity: 1;}
-      to{opacity: 0;}
-  } */
-
-
-
-  .info5 {
-    width: 12em;
-    display: block;
-    position: relative;
-    /* margin: 0 auto; */
-    border-right: 3px solid rgba(0, 0, 0, 0);
-    /* font-size: 100%; */
-    /* text-align: center; */
-    white-space: nowrap;
-    overflow: hidden;
-    /* transform: translateY(-50%);     */
-  }
 
   .terminal6 {
     animation:
@@ -538,7 +481,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter6 {
     from{width: 0;}
-    to{width: 12em;}
+    to{width: 14rem;}
   }
   @keyframes blinkTextCursor6{
     from{border-right-color: transparent;}
@@ -547,19 +490,6 @@ text-shadow: 0px 0px 6px white;
   
   @keyframes fadeOutCursor6{
       to{border-right-color: transparent;}
-  }
-
-  .info6 {
-    width: 12em;
-    display: block;
-    position: relative;
-    /* margin: 0 auto; */
-    border-right: 3px solid rgba(0, 0, 0, 0);
-    /* font-size: 100%; */
-    /* text-align: center; */
-    white-space: nowrap;
-    overflow: hidden;
-    /* transform: translateY(-50%);     */
   }
 
   .terminal7 {
@@ -571,7 +501,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter7 {
     from{width: 0;}
-    to{width: 14rem;}
+    to{width: 11rem;}
   }
   @keyframes blinkTextCursor7{
     from{border-right-color: transparent;}
@@ -580,19 +510,6 @@ text-shadow: 0px 0px 6px white;
   
   @keyframes fadeOutCursor7{
       to{border-right-color: transparent;}
-  }
-  
-  .info7 {
-    width: 12em;
-    display: block;
-    position: relative;
-    /* margin: 0 auto; */
-    border-right: 3px solid rgba(0, 0, 0, 0);
-    /* font-size: 100%; */
-    /* text-align: center; */
-    white-space: nowrap;
-    overflow: hidden;
-    /* transform: translateY(-50%);     */
   }
 
   .terminal8 {
@@ -604,7 +521,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter8 {
     from{width: 0;}
-    to{width: 14rem;}
+    to{width: 10rem;}
   }
   @keyframes blinkTextCursor8{
     from{border-right-color: transparent;}
@@ -613,19 +530,6 @@ text-shadow: 0px 0px 6px white;
   
   @keyframes fadeOutCursor8{
       to{border-right-color: transparent;}
-  }
-
-  .info8 {
-    width: 12em;
-    display: block;
-    position: relative;
-    /* margin: 0 auto; */
-    border-right: 3px solid rgba(0, 0, 0, 0);
-    /* font-size: 100%; */
-    /* text-align: center; */
-    white-space: nowrap;
-    overflow: hidden;
-    /* transform: translateY(-50%);     */
   }
 
   .terminal9 {
@@ -637,7 +541,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter9 {
     from{width: 0;}
-    to{width: 18rem;}
+    to{width: 16rem;}
   }
   @keyframes blinkTextCursor9{
     from{border-right-color: transparent;}
@@ -646,19 +550,6 @@ text-shadow: 0px 0px 6px white;
   
   @keyframes fadeOutCursor9{
       to{border-right-color: transparent;}
-  }
- 
-  .info9 {
-    width: 12em;
-    display: block;
-    position: relative;
-    /* margin: 0 auto; */
-    border-right: 3px solid rgba(0, 0, 0, 0);
-    /* font-size: 100%; */
-    /* text-align: center; */
-    white-space: nowrap;
-    overflow: hidden;
-    /* transform: translateY(-50%);     */
   }
 
   .terminal10 {
@@ -670,7 +561,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter10 {
     from{width: 0;}
-    to{width: 20rem;}
+    to{width: 18rem;}
   }
   @keyframes blinkTextCursor10{
     from{border-right-color: transparent;}
@@ -681,34 +572,21 @@ text-shadow: 0px 0px 6px white;
       to{border-right-color: transparent;}
   }
 
-.info10 {
-  width: 12em;
-  display: block;
-  position: relative;
-  /* margin: 0 auto; */
-  border-right: 3px solid rgba(0, 0, 0, 0);
-  /* font-size: 100%; */
-  /* text-align: center; */
-  white-space: nowrap;
-  overflow: hidden;
-  /* transform: translateY(-50%);     */
-}
+  .terminal11 {
+    animation:
+        typewriter11 1s steps(2) 13.8s 1 normal both,
+        blinkTextCursor11 400ms steps(2) 13.6s infinite normal;
+        /* fadeOutCursor10 500ms 14s ease-out forwards; */
 
-.terminal11 {
-  animation:
-      typewriter11 1s steps(2) 13.6s 1 normal both,
-      blinkTextCursor11 400ms steps(2) 13.4s infinite normal;
-      /* fadeOutCursor10 500ms 14s ease-out forwards; */
-
-}
-@keyframes typewriter11 {
-  from{width: 0;}
-  to{width: 0.2em;}
-}
-@keyframes blinkTextCursor11{
-  from{border-right-color: transparent;}
-  to{border-right-color: var(--main-white);}
-}
+  }
+  @keyframes typewriter11 {
+    from{width: 0;}
+    to{width: 0.2em;}
+  }
+  @keyframes blinkTextCursor11{
+    from{border-right-color: transparent;}
+    to{border-right-color: var(--main-white);}
+  }
 
 /* @keyframes fadeOutCursor10{
     to{border-right-color: transparent;}
