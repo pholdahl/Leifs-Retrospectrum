@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 :root {
+    --font-size: 1rem;
     --menu-size: 1.3rem;
     --headline-fonts: "Menlo","Arial", sans-serif;
     --body-fonts: "VT323", "Courier", "Roboto", "Arial", sans-serif;
@@ -41,7 +42,7 @@ html{
 body {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: var(--font-size);
   outline: solid teal 3px;
   width: var(--device-width);
   min-height: 100vh;
@@ -261,18 +262,19 @@ h1{
 .postit-1 > img {
   margin-top: -7px;
   margin-left: -14px;
-  width: 4.5rem;
+  width: 4.2rem;
   transform: skew(10deg, -15deg) scaleY(calc(6 / 8));
   filter: drop-shadow(2px 5px 4px rgb(0, 0, 0));
 }
 
 .postit-1 figcaption {
   position: absolute;
-  margin-top: -70px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  left: -18px;
+  margin-top: -25px;
+  margin-right: -15px;
+  top: 50%;
+  left: -50%px;
   right: 0;
+  translate: (-50%,-50%);
   text-align: center;
   white-space: pre;
   font-family: 'Caveat', cursive;
@@ -311,11 +313,13 @@ h1{
 
 .postit-2 figcaption {
   position: absolute;
-  margin-top: -59px;
-  margin-left: auto;
+  margin-top: -29px;
+  margin-left: -20px;
   margin-right: auto;
-  left: 0;
+  top: 50%;
+  left: 50%;
   right: 0;
+  translate: (-50%,-50%);
   text-align: center;
   white-space: pre;
   font-family: 'Caveat', cursive;
@@ -376,6 +380,8 @@ text-shadow: 0px 0px 6px white;
 
 footer{
  margin-top: auto;
+ text-align: center;
+ color: rgba(128, 128, 128, 0.427);
 }
 
 /* Animation */
@@ -623,6 +629,7 @@ color: white;
   and (max-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2){
     :root {
+      font-size: 1.1rem;
       --device-width:375px;
       --menu-height: 80px;
       --screen-height: 265px;
@@ -638,6 +645,7 @@ color: white;
   and (max-width: 736px)
   and (-webkit-min-device-pixel-ratio: 2){
     :root {
+      font-size: 1.2rem;
       --device-width: 414px;
       --menu-height: 90px;
       --screen-height: 290px;
