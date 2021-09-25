@@ -23,6 +23,7 @@
     --monitor-button-section-height: 110px;
     --monitor-button-height: 50px;
     --monitor-button-width: 125px;
+    --postit-fontsize: 4.2rem;
 }
 
 * {
@@ -54,7 +55,7 @@ body {
 .bgcontainer {
   /* display: flex; */
   /* flex: 1 1 auto; */
-  outline: solid blue 1px;
+  /* outline: solid blue 1px; */
   /* align-items: flex-start;
   justify-content: center; */
   background-image: url("sonyMonitorTiny.png");
@@ -206,7 +207,7 @@ h1{
   border: none;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 255, 0.267);
+  /* background: rgba(0, 0, 255, 0.267); */
   z-index: 1;
 }
 
@@ -221,7 +222,7 @@ h1{
   margin-right: 6px;
   width: var(--monitor-button-width);
   height: var(--monitor-button-height);
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 .makerbutton > .button {
@@ -230,28 +231,58 @@ h1{
   border: none;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.082);
+  /* background: rgba(255, 255, 255, 0.082); */
   z-index: 1;
 }
-.postit-1{
-  flex: 1 2 auto;
-  margin-right: 80%;
+
+.postit-1-wrapper{
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
   justify-self: flex-start;
-  align-content: flex-start;
-  max-width: 60px;
-  width: 50px;
-  height: 55px;
-  background-color: rgba(0, 0, 255, 0.303);
+  align-self: flex-start;
+  height: 56px;
+  /* background-color: rgba(255, 0, 204, 0.303); */
   z-index: 4;
 }
 
+.postit-1{
+  position: relative;
+  flex: 1 0 auto;
+  margin-right: auto;
+  justify-self: flex-start;
+  align-self: flex-start;
+  max-width: 60px;
+  width: 50px;
+  height: 55px;
+  /* background-color: rgba(0, 0, 255, 0.303); */
+  z-index: 4;
+}
 .postit-1 > img {
   margin-top: -7px;
   margin-left: -14px;
-  width: 120%;
+  width: 4.5rem;
   transform: skew(10deg, -15deg) scaleY(calc(6 / 8));
   filter: drop-shadow(2px 5px 4px rgb(0, 0, 0));
-  /* transform: skew(35deg, -15deg); */
+}
+
+.postit-1 figcaption {
+  position: absolute;
+  margin-top: -70px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  left: -18px;
+  right: 0;
+  text-align: center;
+  white-space: pre;
+  font-family: 'Caveat', cursive;
+  transform: rotateZ(-17deg);
+  font-size: 0.8rem;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 0.5rem;
+  color: black;
+  z-index: 10;
 }
 
 .postit-2{
@@ -268,12 +299,11 @@ h1{
 .postit-2-wrapper {
   position: relative;
   width: inherit;
-
 }
 
 .postit-2 img {
   margin-top: -10px;
-  width: 130%;
+  width: 4.1rem;
   transform: rotateZ(15deg);
   z-index: 2;
   filter: drop-shadow(3px 3px 4px rgb(0, 0, 0));
@@ -314,7 +344,7 @@ h1{
 }
 
 #madeOf {
-font-size: 0.9rem;
+font-size: 1.1rem;
 white-space: pre;
 text-shadow: 0px 0px 6px white;
 }
@@ -332,12 +362,13 @@ text-shadow: 0px 0px 6px white;
 
 .sitecreators {
   text-align: center;
-  /* font-size: 0.6rem; */
+  font-size: 1rem;
   overflow: hidden;
   display: block;
 }
 
 #creators {
+  font-size: 1.2rem;
   width: 100%;
   height: 100%;
 
