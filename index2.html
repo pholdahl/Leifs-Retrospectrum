@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles2.css">
+    <!-- <script src="script.js"></script> -->
     <title>Portfolio</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
             <header>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="index2.html">HOME</a></li>
+                        <li><a href="index2.html" style="background-color: black; color: white;">HOME</a></li>
                         <li><a href="#">RESUME</a></li>
                         <li><a href="#">PORTFOLIO</a></li>
                         <li><a href="#">ABOUT</a></li>
@@ -57,7 +58,16 @@
         <div class="emptyspace">
         </div>
         <section class="sectionB">
-            <div class="postit-1"></div>
+            <div class="postit-1">
+                <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
+                <figcaption>
+Sorte 
+   knapper
+    =
+ Creators
+    of
+                </figcaption>
+            </div>
             <div class="postit-2">
                 <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
                 <figcaption>
@@ -68,15 +78,14 @@ Hvite
     meg
                 </figcaption>
             </div>
-            <div class="imagebutton"><button class="button">push me</button></div>
-            <div class="makerbutton"> </div>
+            <div class="imagebutton"><a href="#bildeAvMeg" id="btn1" class="button" onclick="toggleHide()"> </a></div>
+            <div class="makerbutton"><a href="#creators" id="btn2" class="button" onclick="toggleHide2()"> </a></div>
         </section>
         <section class="sectionC hide">
         </section>
-        <aside id="bildeAvMeg" class="ascii">
-            <p>
-
-  ----------------------------------------------                  
+        <aside id="bildeAvMeg" class="hidden">
+            <p id="asciiBildeAvMeg" class="hidden">    
+                <!-- ----------------------------------------------                   -->
 |                      &lt;((((((\\\             |
 |                       /      . }\           |
 |                       ;--..--._|}           |
@@ -94,7 +103,15 @@ Hvite
 -----------------------------------------------
             </p>
         </aside>
-        <aside>
+        <aside id="creators" class="hidden">
+            <p id="madeOf" class="hidden">
+    Siden er laget av gruppe 107:
+
+    Leif Esten Grimstad Kielland - s362119
+    Pål André Holdahl - s147098
+    Sander Wiik Hjermstad - s362057
+
+            </p>
         </aside>
         <footer>
             <p>this is a footer</p>
@@ -105,5 +122,16 @@ Hvite
             Please turn your device in portrait mode.
         </p>
     </div>
+
+    <script>
+            function toggleHide() {
+                document.getElementById("bildeAvMeg").classList.toggle("ascii");
+                document.getElementById("asciiBildeAvMeg").classList.toggle("ascii");
+            }
+            function toggleHide2() {
+                document.getElementById("creators").classList.toggle("sitecreators");
+                document.getElementById("madeOf").classList.toggle("sitecreators");
+            }
+    </script>
 </body>
 </html>
