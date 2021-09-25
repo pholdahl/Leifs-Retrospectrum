@@ -26,6 +26,7 @@
 }
 
 * {
+  /* font-size: px; */
   margin: 0px;
   padding: 0px;
   z-index: 1;
@@ -40,10 +41,11 @@ body {
   /* position: relative; */
   /* display: flex;
   flex-direction: column; */
-  font-size: 1em;
+  font-size: 1rem;
   outline: solid teal 3px;
   width: var(--device-width);
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 100%;
   font-family: var(--body-fonts);
   color: white;
   background: var(--BGcolor);
@@ -99,7 +101,7 @@ header {
   align-items: flex-end;
   justify-content: space-between;
   /* grid-area: header; */
-  outline: solid green 1px;
+  /* outline: solid green 1px; */
   /* height: var(--menu-height); */
   /* align-items: flex-end; */
 }
@@ -112,7 +114,7 @@ header {
   /* height: 2rem; */
   background-color: white;
   box-shadow: 0px 0px 5px 1px white;
-  outline: solid orange 3px;
+  /* outline: solid orange 3px; */
 
 }
 
@@ -176,13 +178,6 @@ h1{
     overflow: hidden;
 }
 
-/* .emptyspace {
-  flex: 1 1 auto;
-  height: var(--monitor-height);
-  outline: yellow solid 3px;
-} */
- /* Knappeseksjonen må justeres manuelt i @media */
-
 .sectionB{
   display: flex;
   flex: 1 1 auto;
@@ -192,7 +187,7 @@ h1{
   align-items: flex-start;
   height: var(--monitor-button-section-height);
   width: 100%;
-  outline: solid red 3px;
+  /* outline: solid red 3px; */
 }
 
 
@@ -212,7 +207,7 @@ h1{
   border: none;
   width: 100%;
   height: 100%;
-  background: transparent;
+  background: rgba(0, 0, 255, 0.267);
   z-index: 1;
 }
 
@@ -229,24 +224,34 @@ h1{
   height: var(--monitor-button-height);
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+.makerbutton > .button {
+  flex: 1 1 auto;
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.082);
+  z-index: 1;
+}
 .postit-1{
-  flex: 1 1 50px;
+  flex: 1 2 auto;
   margin-right: 80%;
   justify-self: flex-start;
   align-content: flex-start;
-  perspective: 1000px;
+  max-width: 60px;
   width: 50px;
-  height: 50px;
+  height: 55px;
   background-color: rgba(0, 0, 255, 0.303);
   z-index: 4;
 }
 
 .postit-1 > img {
-  margin-top: -5px;
-  width: 90%;
-  transform: rotateY(-50deg);
+  margin-top: -7px;
+  margin-left: -14px;
+  width: 120%;
+  transform: skew(10deg, -15deg) scaleY(calc(6 / 8));
   /* transform: skew(35deg, -15deg); */
-  z-index: 4;
 }
 
 .postit-2{
@@ -276,16 +281,16 @@ h1{
   font-size: 0.8rem;
   word-spacing: 1px;
   letter-spacing: 1px;
-  line-height: 0.7rem;
+  line-height: 0.5rem;
   color: black;
-  margin-top: -80px;
-  margin-left: 3px;
+  margin-top: -60px;
+  margin-left: 7px;
   z-index: 10;
 }
 
 .sectionC {
   /* height: 100%; */
-  outline: pink solid 3px;
+  /* outline: pink solid 3px; */
   font-size: 1rem;
 }
 
@@ -295,8 +300,8 @@ h1{
   text-shadow: 0px 0px 6px white;
 }
 
-#creators {
-font-size: 1rem;
+#madeOf {
+font-size: 0.9rem;
 white-space: pre;
 text-shadow: 0px 0px 6px white;
 }
@@ -314,9 +319,15 @@ text-shadow: 0px 0px 6px white;
 
 .sitecreators {
   text-align: center;
-  font-size: 0.6rem;
+  /* font-size: 0.6rem; */
   overflow: hidden;
   display: block;
+}
+
+#creators {
+  width: 100%;
+  height: 100%;
+
 }
 
 /* aside > * {
@@ -348,7 +359,14 @@ text-shadow: 0px 0px 6px white;
       to{opacity: 1;}
   } */
 
+  .infoAll {
+
+  }
+
+
+
   .info1 {
+    font-size: 1.3rem;
     width: 8em;
     display: block;
     /* position: relative; */
@@ -386,9 +404,8 @@ text-shadow: 0px 0px 6px white;
   } */
 
   .info2 {
-    width: 12em;
+    width: 1rem;
     display: block;
-    /* position: relative; */
     /* margin: 0 auto; */
     border-right: 3px solid rgba(0, 0, 0, 0);
     /* text-align: center; */
@@ -423,12 +440,11 @@ text-shadow: 0px 0px 6px white;
   } */
 
   .info3 {
-    width: 12em;
+    width: 1rem;
     display: block;
-    position: relative;
     /* margin: 0 auto; */
     border-right: 3px solid rgba(0, 0, 0, 0);
-    font-size: 100%;
+    /* font-size: 100%; */
     /* text-align: center; */
     white-space: nowrap;
     overflow: hidden;
@@ -555,7 +571,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter7 {
     from{width: 0;}
-    to{width: 4em;}
+    to{width: 14rem;}
   }
   @keyframes blinkTextCursor7{
     from{border-right-color: transparent;}
@@ -588,7 +604,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter8 {
     from{width: 0;}
-    to{width: 4em;}
+    to{width: 14rem;}
   }
   @keyframes blinkTextCursor8{
     from{border-right-color: transparent;}
@@ -621,7 +637,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter9 {
     from{width: 0;}
-    to{width:12em;}
+    to{width: 18rem;}
   }
   @keyframes blinkTextCursor9{
     from{border-right-color: transparent;}
@@ -654,7 +670,7 @@ text-shadow: 0px 0px 6px white;
   }
   @keyframes typewriter10 {
     from{width: 0;}
-    to{width: 12em;}
+    to{width: 20rem;}
   }
   @keyframes blinkTextCursor10{
     from{border-right-color: transparent;}
