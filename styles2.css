@@ -251,7 +251,7 @@ h1{
   margin-left: -14px;
   width: 120%;
   transform: skew(10deg, -15deg) scaleY(calc(6 / 8));
-  box-shadow: 0px 3px 5px black;
+  filter: drop-shadow(2px 5px 4px rgb(0, 0, 0));
   /* transform: skew(35deg, -15deg); */
 }
 
@@ -272,7 +272,7 @@ h1{
   width: 130%;
   transform: rotateZ(15deg);
   z-index: 2;
-  box-shadow: 0px 3px 3px black;
+  filter: drop-shadow(3px 3px 4px rgb(0, 0, 0));
 }
 
 .postit-2 > figcaption {
