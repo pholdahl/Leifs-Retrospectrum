@@ -21,7 +21,7 @@
                 <nav class="navbar">
                     <ul>
                         <li><a href="index2.html" style="background-color: black; color: white;">START</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
                         <li><a href="#">RETRODATA</a></li>
                         <li><a href="#">RETROPOD</a></li>
                     </ul>
@@ -87,7 +87,7 @@ Hvite
     </div>
         <section class="sectionC hide">
             <figure style="background-color: rgba(0, 0, 0, 0.447); margin: 5% 5%; z-index: -1; border-radius: 5%;">
-                <blockquote style="text-align: center; padding: 5% 5%;">
+                <blockquote style="text-align: center; padding: 5% 5%; max-width: 650px; margin: 0 auto;">
                     <p style="background-color: rgba(128, 128, 128, 0.269);">
                         "the cake is a lie. the cake is a lie. the cake is a lie. the cake is a lie."
                     </p>
@@ -133,6 +133,7 @@ Sander Wiik Hjermstad - s362057
     <footer>
         <p>pholdahl &copy; 2021</p>
     </footer>
+    <audio id="my_audio" src="/sound/sound-of-old-computer.mp3" style="display: hidden;"></audio>
     <div class="turndevice">
         <p>
             Please turn your device in portrait mode.
@@ -140,18 +141,11 @@ Sander Wiik Hjermstad - s362057
     </div>
 
     <script>
-            // function toggleHide() {
-            //     document.getElementById("bildeAvMeg").classList.toggle("ascii");
-            //     document.getElementById("creators").classList.remove("sitecreators");
-            //     document.getElementById("creators").classList.add("hidden");
-            //     document.getElementById("asciiBildeAvMeg").classList.toggle("asciiBildeAvMeg");
-            // }
-            // function toggleHide2() {
-            //     document.getElementById("creators").classList.toggle("sitecreators");
-            //     document.getElementById("bildeAvMeg").classList.remove("ascii");
-            //     document.getElementById("bildeAvMeg").classList.add("hidden");
-            //     document.getElementById("madeOf").classList.toggle("sitecreators");
-            // }
+        var audio = document.getElementById("my_audio")
+        window.onload = function() {
+            audio.volume = 0.2
+            audio.play();
+        }
     </script>
 </body>
 </html>
