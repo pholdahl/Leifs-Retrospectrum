@@ -10,3 +10,6 @@ function toggleHide2() {
   document.getElementById("bildeAvMeg").classList.add("hidden");
   // document.getElementById("madeOf").classList.toggle("sitecreators");
 }
+window.onload = function() {
+  document.getElementById("my_audio").play();
+}
