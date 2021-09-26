@@ -59,7 +59,7 @@ body {
   /* position: relative; */
   /* display: flex; */
   /* flex: 1 1 auto; */
-  outline: solid blue 1px;
+  outline: solid red 1px;
   /* align-items: flex-start;
   justify-content: center; */
   background-image: url("sonyMonitorTiny.png");
