@@ -54,9 +54,10 @@ body {
 
 /* Background image */
 .bgcontainer {
+  width: 100%;
   padding-bottom: 10%;
   /* height: 100%; */
-  /* position: relative; */
+  position: relative;
   /* display: flex; */
   /* flex: 1 1 auto; */
   outline: solid red 1px;
