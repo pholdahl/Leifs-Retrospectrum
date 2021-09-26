@@ -21,7 +21,7 @@
     --screen-height: 225px;
     --monitor-height: calc(var(--screen-height) +  var(--menu-size));
     --monitor-top-height: calc(var(--menu-height) - var(--menu-size));
-    --monitor-button-section-height: 110px;
+    --monitor-button-section-height: 7rem;
     --monitor-button-height: 50px;
     --monitor-button-width: 125px;
     --postit-fontsize: 4.2rem;
@@ -55,12 +55,12 @@ body {
 /* Background image */
 .bgcontainer {
   width: 100%;
-  padding-bottom: 10%;
+  /* padding-bottom: 10%; */
   position: relative;
-  /* display: flex; */
-  /* flex: 1 1 auto; */
+  display: flex;
+  flex-wrap: wrap;
   outline: solid red 1px;
-  /* align-items: flex-start;
+  /* align-items: center;
   justify-content: center; */
   background-image: url("sonyMonitorTiny.png");
   background-position: top center;
@@ -208,7 +208,7 @@ h1{
   align-items: flex-start;
   height: var(--monitor-button-section-height);
   width: 100%;
-  /* outline: solid red 3px; */
+  outline: solid red 3px;
 }
 
 
