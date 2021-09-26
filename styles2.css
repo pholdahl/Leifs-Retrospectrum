@@ -22,8 +22,8 @@
     --monitor-height: calc(var(--screen-height) +  var(--menu-size));
     --monitor-top-height: calc(var(--menu-height) - var(--menu-size));
     --monitor-button-section-height: 7rem;
-    --monitor-button-height: 50px;
-    --monitor-button-width: 125px;
+    --monitor-button-height: 3rem;
+    --monitor-button-width: 7rem;
     --postit-fontsize: 4.2rem;
 }
 
@@ -309,16 +309,17 @@ h1{
 
 .imagebutton {
   /* flex-direction: row; */
+  flex: 1 1 auto;
   display: block;
   justify-self: flex-end;
   align-self: flex-end;
   width: var(--monitor-button-width);
   height: var(--monitor-button-height);
-  /* background-color: rgba(255, 0, 0, 0.338); */
+  background-color: rgba(255, 0, 0, 0.338);
 }
 
 .imagebutton > .button {
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   display: block;
   border: none;
   width: 100%;
@@ -338,7 +339,7 @@ h1{
   margin-right: 6px;
   width: var(--monitor-button-width);
   height: var(--monitor-button-height);
-  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .makerbutton > .button {
@@ -358,7 +359,7 @@ h1{
   justify-self: flex-start;
   align-self: flex-start;
   height: 56px;
-  /* background-color: rgba(255, 0, 204, 0.303); */
+  background-color: rgba(255, 0, 204, 0.303);
   z-index: 4;
 }
 
@@ -370,8 +371,8 @@ h1{
   align-self: flex-start;
   max-width: 60px;
   width: 50px;
-  height: 55px;
-  /* background-color: rgba(0, 0, 255, 0.303); */
+  height: 3rem;
+  background-color: rgba(0, 0, 255, 0.303);
   z-index: 4;
 }
 .postit-1 > img {
@@ -409,11 +410,12 @@ h1{
   margin-right: 4px;
   max-width: 80px;
   width: 50px;
-  height: 55px;
-  z-index: 3;
-  /* background-color: rgba(43, 255, 0, 0.303); */
+  height: 4rem;
+  z-index: 2;
+  background-color: rgba(43, 255, 0, 0.303);
 }
 .postit-2-wrapper {
+  z-index: 5;
   position: relative;
   width: inherit;
 }
@@ -422,7 +424,7 @@ h1{
   margin-top: -10px;
   width: 4.1rem;
   transform: rotateZ(15deg);
-  z-index: 2;
+  z-index: 5;
   filter: drop-shadow(3px 3px 4px rgb(0, 0, 0));
 }
 
@@ -777,10 +779,12 @@ color: white;
     :root {
       font-size: 1.8rem;
       --device-width: 768px;
-      --menu-height: 130px;
-      --screen-height: 570px;
+      --menu-height: 140px;
+      --screen-height: 560px;
       --monitor-button-width: 155px;
+      --monitor-button-section-height: 8.9rem;
     }
+  }
 
   @media only screen and (orientation: landscape){
     .turndevice{
