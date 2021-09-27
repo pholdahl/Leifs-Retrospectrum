@@ -19,7 +19,7 @@
     --device-width: 320px;
     --menu-height: 65px;
     --screen-height: 225px;
-    --monitor-height: calc(var(--screen-height) +  var(--menu-size));
+    --monitor-height: calc(var(--screen-height) + var(--menu-size));
     --monitor-top-height: calc(var(--menu-height) - var(--menu-size));
     --monitor-button-section-height: 7rem;
     --monitor-button-height: 3rem;
@@ -203,14 +203,14 @@ h2 {
   background-image: radial-gradient(
     rgba(0, 17, 150, 0.75), black 120%);
   top: var(--monitor-top-height);
-  /* height: var(--monitor-height); */
+  height: var(--monitor-height);
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 5), inset 0px 0px 50px 10px rgba(0, 0, 0, 5);
   border-radius: 10% 10% 10% 10%;
   /* overflow: hidden; */
   /* outline: purple solid 3px; */
   margin-bottom: var(--monitor-top-height);
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch; */
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   /* margin-left: auto;
   margin-right: auto; */
 }
@@ -288,12 +288,11 @@ ul {
 
 .sectionA {
   width: 100%;
-  height: 100%;
+  height: var(--screen-height);
   flex: 1 1 auto;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   padding-left: .5em;
-  height: var(--screen-height);
   outline: yellow solid 3px;
 
 }
@@ -818,7 +817,7 @@ and (-webkit-min-device-pixel-ratio: 1){
     font-size: 2.2rem;
     --device-width: 1200px;
     --menu-height: 180px;
-    --screen-height: 750px;
+    --screen-height: 630px;
     --monitor-button-width: 12.6rem;
     --monitor-button-section-height: 8rem;
     --typeLengthShort: 8.5em;
