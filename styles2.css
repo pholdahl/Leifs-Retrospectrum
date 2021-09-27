@@ -86,7 +86,7 @@ h2 {
 }
 
 .onLight {
-  content: "";
+  /* content: ""; */
   /* visibility: hidden; */
   /* outline: rgb(21, 0, 255) solid 2px; */
   position: absolute;
