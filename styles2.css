@@ -67,7 +67,7 @@ h2 {
 /* Background image */
 .bgcontainer {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* padding-bottom: 10%; */
   position: relative;
   display: flex;
