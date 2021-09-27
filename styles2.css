@@ -25,6 +25,10 @@
     --monitor-button-height: 3rem;
     --monitor-button-width: 7rem;
     --postit-fontsize: 4.2rem;
+    --typeLengthShort: 11rem;
+    --typeLengthMedium: 15rem;
+    --typeLengthLong: 18rem;
+    --typeLengthHeading: 18rem;
 }
 
 * {
@@ -575,7 +579,7 @@ footer{
   }
   @keyframes typewriter {
     from{width: 0;}
-    to{width: 18rem;}
+    to{width: var(--typeLengthHeading);}
   }
   @keyframes blinkTextCursor{
     from{border-right-color: transparent;}
@@ -604,7 +608,7 @@ footer{
   }
   @keyframes typewriter2 {
     from{width: 0;}
-    to{width: 16.2rem;}
+    to{width: var(--typeLengthLong)}
   }
   @keyframes blinkTextCursor2{
     from{border-right-color: transparent;}
@@ -624,7 +628,7 @@ footer{
   }
   @keyframes typewriter3 {
     from{width: 0;}
-    to{width: 15em;}
+    to{width: var(--typeLengthLong);}
   }
   @keyframes blinkTextCursor3{
     from{border-right-color: transparent;}
@@ -644,7 +648,7 @@ footer{
   }
   @keyframes typewriter4 {
     from{width: 0;}
-    to{width: 15em;}
+    to{width: var(--typeLengthMedium);}
   }
   @keyframes blinkTextCursor4{
     from{border-right-color: transparent;}
@@ -664,7 +668,7 @@ footer{
   }
   @keyframes typewriter5 {
     from{width: 0;}
-    to{width: 12em;}
+    to{width: var(--typeLengthMedium);}
   }
   @keyframes blinkTextCursor5{
     from{border-right-color: transparent;}
@@ -684,7 +688,7 @@ footer{
   }
   @keyframes typewriter6 {
     from{width: 0;}
-    to{width: 14rem;}
+    to{width: var(--typeLengthMedium);}
   }
   @keyframes blinkTextCursor6{
     from{border-right-color: transparent;}
@@ -704,7 +708,7 @@ footer{
   }
   @keyframes typewriter7 {
     from{width: 0;}
-    to{width: 11rem;}
+    to{width: var(--typeLengthShort);}
   }
   @keyframes blinkTextCursor7{
     from{border-right-color: transparent;}
@@ -724,7 +728,7 @@ footer{
   }
   @keyframes typewriter8 {
     from{width: 0;}
-    to{width: 10rem;}
+    to{width: var(--typeLengthShort);}
   }
   @keyframes blinkTextCursor8{
     from{border-right-color: transparent;}
@@ -744,7 +748,7 @@ footer{
   }
   @keyframes typewriter9 {
     from{width: 0;}
-    to{width: 16rem;}
+    to{width: var(--typeLengthLong);}
   }
   @keyframes blinkTextCursor9{
     from{border-right-color: transparent;}
@@ -764,7 +768,7 @@ footer{
   }
   @keyframes typewriter10 {
     from{width: 0;}
-    to{width: 18rem;}
+    to{width: var(--typeLengthLong);}
   }
   @keyframes blinkTextCursor10{
     from{border-right-color: transparent;}
@@ -784,7 +788,7 @@ footer{
   }
   @keyframes typewriter11 {
     from{width: 0;}
-    to{width: 0.2em;}
+    to{width: 0.2rem;}
   }
   @keyframes blinkTextCursor11{
     from{border-right-color: transparent;}
@@ -816,25 +820,31 @@ and (-webkit-min-device-pixel-ratio: 1){
     --menu-height: 180px;
     --screen-height: 750px;
     --monitor-button-width: 12.6rem;
-    /* --monitor-button-width: px; */
-    --monitor-button-section-height: 7.8rem;
+    --monitor-button-section-height: 8rem;
+    --typeLengthShort: 8.5em;
+    --typeLengthMedium: 12em;
+    --typeLengthLong: 14.5em;
+    --typeLengthHeading: 8em;
   }
+
+  
   html {
     background-color: var(--BGcolor);
+    height: auto;
   }
   .bgcontainer {
     background-size: 100%;
   }
   .onMonitor {
     max-width: 900px;
-    max-height: 690px;
+    max-height: 680px;
     margin-left: auto;
     margin-right: auto;
     /* outline: green solid 3px; */
   }
-.postit-2 {
-  margin-right: 250px;
-}
+  .postit-2 {
+    margin-right: 250px;
+  }
   .postit-2 figcaption {
     margin-top: -69px;
     margin-left: -10px;
