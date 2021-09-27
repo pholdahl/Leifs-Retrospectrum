@@ -291,7 +291,7 @@ ul {
   height: var(--screen-height);
   flex: 1 1 auto;
   overflow-y: scroll;
-  /* -webkit-overflow-scrolling: touch; */
+  -webkit-overflow-scrolling: touch;
   padding-left: .5em;
   outline: yellow solid 3px;
 
@@ -300,6 +300,11 @@ ul {
 .sectionA::-webkit-scrollbar {
   display: none;
 }
+
+/* .sectionA > p {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+} */
 
 
 .sectionA > *{
@@ -817,7 +822,7 @@ and (-webkit-min-device-pixel-ratio: 1){
     font-size: 2.2rem;
     --device-width: 1200px;
     --menu-height: 180px;
-    --screen-height: 530px;
+    --screen-height: 19em;
     --monitor-button-width: 12.6rem;
     --monitor-button-section-height: 8rem;
     --typeLengthShort: 8.5em;
