@@ -258,12 +258,11 @@ header {
 
 }
 
-ul {
+.navbar > ul {
   margin-top: auto;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  /* box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 5); */
 }
 
 .navbar > ul > li > a {
@@ -352,6 +351,20 @@ h2 {
   /* outline: solid red 3px; */
 }
 
+.images {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  width: 300px;
+  display: block;
+  overflow: hidden;
+}
+img {
+  width: 50%;
+}
 
 .imagebutton {
   /* flex-direction: row; */
