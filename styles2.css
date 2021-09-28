@@ -9,8 +9,9 @@
     --body-fonts: "VT323", "Courier", "Roboto", "Arial", sans-serif;
     --main-gray: dimgray;
     --main-bluegray: #3a3d40;
+    --main-dark: rgba(0, 0, 0, 1);
     --main-white: white;
-    --main-blue: #2f3f4f;
+    --main-blue: rgb(0, 0, 255, 1);
     --height: 100vh;
     --height-auto: auto;
     --height-90: 85vh;
@@ -30,6 +31,8 @@
     --typeLengthLong: 18rem;
     --typeLengthHeading: 18rem;
 }
+
+/* --main-white: white; */
 
 * {
   /* font-size: px; */
@@ -53,7 +56,7 @@ body {
   min-height: 100vh;
   max-height: 100%;
   font-family: var(--body-fonts);
-  color: white;
+  color: var(--main-white);
   background: var(--BGcolor);
   align-items: center;
   box-shadow: 0 0 20px 15px black;
@@ -67,14 +70,10 @@ h2 {
 /* Background image */
 .bgcontainer {
   width: 100%;
-  /* margin: 0 auto; */
-  /* padding-bottom: 10%; */
   position: relative;
   display: flex;
   flex-wrap: wrap;
   /* outline: solid red 1px; */
-  /* align-items: center;
-  justify-content: center; */
   background-image: url("sonyMonitorTiny.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -86,11 +85,7 @@ h2 {
 }
 
 .onLight {
-  /* content: ""; */
-  /* visibility: hidden; */
-  /* outline: rgb(21, 0, 255) solid 2px; */
   position: absolute;
-  /* opacity: 0.1; */
   background: radial-gradient(ellipse at center, rgba(245, 212, 102, 0.9) 14%, rgba(255, 255, 255, 0.0) 40%, rgba(255, 255, 255, 0) 100%);
   width: 6rem;
   height: 2.8rem;
@@ -101,20 +96,6 @@ h2 {
   transform: translate(-50%,0);
   animation: ligthsOn 10s ease-out infinite;
 }
-
-/* .onLight:after {
-  content: "";
-  position: absolute;
-  opacity: 0.5;
-  background-color: rgba(228, 228, 142, 0);
-  width: 1rem;
-  height: 1rem;
-  border-radius: 20%;
-  top: 1.1rem;
-  left: 50%;
-  translate: (-50,0);
-  animation: ligthsOn 4s ease-out infinite;
-} */
 
 @keyframes ligthsOn {
   from {
@@ -201,18 +182,16 @@ h2 {
   display: block;
   position: relative;
   background-image: radial-gradient(
-    rgba(0, 17, 150, 0.75), black 120%);
+    var(--main-blue), var(--main-dark) 120%);
   top: var(--monitor-top-height);
   height: var(--monitor-height);
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 5), inset 0px 0px 50px 10px rgba(0, 0, 0, 5);
   border-radius: 10% 10% 10% 10%;
-  /* overflow: hidden; */
+  overflow: hidden;
   /* outline: purple solid 3px; */
   margin-bottom: var(--monitor-top-height);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .onMonitor::-webkit-scrollbar {
@@ -238,11 +217,7 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  /* outline: hotpink solid 3px; */
-  /* grid-area: header; */
-  /* outline: solid green 1px; */
-  /* height: var(--menu-height); */
-  /* align-items: flex-end; */
+  /* outline: solid green 3px; */
 }
 
 .navbar {
@@ -250,10 +225,9 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  /* height: 2rem; */
   /* outline: hotpink solid 3px; */
-  background-color: white;
-  box-shadow: 0px 0px 5px 1px white;
+  background-color: var(--main-white);
+  box-shadow: 0px 0px 5px 1px var(--main-white);
   outline: solid orange 3px;
 
 }
@@ -272,7 +246,6 @@ header {
   /* outline: hotpink solid 3px; */
   background-color: white;
   font-size: var(--menu-size);
-  /* box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 5); */
 }
 
 
@@ -280,10 +253,6 @@ header {
   background-color: black;
   color: white;
 }
-
-/* main {
-  grid-area: main;
-} */
 
 .sectionA {
   width: 100%;
@@ -300,12 +269,6 @@ header {
   display: none;
 }
 
-/* .sectionA > p {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-} */
-
-
 .sectionA > *{
   font-size: 1.2rem;
   text-shadow: 0 0 4px white;
@@ -313,6 +276,13 @@ header {
 
 .textWithSpace {
   margin-top: 2%;
+
+}
+
+.list {
+  list-style-type: disc;
+  align-items: flex-start;
+  justify-self: flex-start;
 }
 
 .sectionA a {
@@ -383,7 +353,6 @@ img {
   border: none;
   width: 100%;
   height: 100%;
-  /* background: rgba(0, 0, 255, 0.267); */
   z-index: 1;
 }
 
@@ -505,14 +474,10 @@ img {
   letter-spacing: 1px;
   line-height: 0.5rem;
   color: black;
-
-  /* margin-top: -50px;
-  margin-left: 6px; */
   z-index: 10;
 }
 
 .sectionC {
-  /* height: 100%; */
   /* outline: pink solid 3px; */
   font-size: 1rem;
 }
@@ -584,7 +549,6 @@ footer{
 .firstArticle {
   text-decoration: underline;
 }
-
 
 
 /* Animation */
@@ -800,7 +764,6 @@ footer{
     animation:
         typewriter11 1s steps(2) 13.8s 1 normal both,
         blinkTextCursor11 400ms steps(2) 13.6s infinite normal;
-        /* fadeOutCursor10 500ms 14s ease-out forwards; */
 
   }
   @keyframes typewriter11 {
@@ -811,10 +774,6 @@ footer{
     from{border-right-color: transparent;}
     to{border-right-color: var(--main-white);}
   }
-
-/* @keyframes fadeOutCursor10{
-    to{border-right-color: transparent;}
-} */
 
 .turndevice {
 display: none;
