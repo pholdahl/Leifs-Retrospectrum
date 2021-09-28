@@ -74,7 +74,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   /* outline: solid red 1px; */
-  background-image: url("sonyMonitorTiny.png");
+  background-image: url(sonyMonitorTiny.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 136%;
@@ -181,14 +181,14 @@ h2 {
 .onMonitor {
   display: block;
   position: relative;
-  background-image: radial-gradient(
-    var(--main-blue), var(--main-dark) 120%);
+  background-image: radial-gradient(var(--main-blue), var(--main-dark) 120%);
   top: var(--monitor-top-height);
   height: var(--monitor-height);
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 5), inset 0px 0px 50px 10px rgba(0, 0, 0, 5);
   border-radius: 10% 10% 10% 10%;
   overflow: hidden;
-  /* outline: purple solid 3px; */
+  width: 300px;
+  outline: purple solid 3px;
   margin-bottom: var(--monitor-top-height);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -260,7 +260,7 @@ header {
   flex: 1 1 auto;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  padding-left: .5em;
+  padding-left: 1rem;
   outline: yellow solid 3px;
 
 }
@@ -322,14 +322,17 @@ h2 {
 }
 
 .images {
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
   height: auto;
 }
 
 
 img {
+  display: block;
+  margin: 0 auto;
   width: 50%;
+  /* max-width: 100%; */
 }
 
 .imagebutton {
@@ -481,6 +484,13 @@ img {
 #adInfoContainer {
   margin: 0 auto;
   
+}
+
+aside {
+  background-color: rgba(0, 0, 0, 0.447); 
+  margin: 5% 5%; 
+  z-index: -1; 
+  border-radius: 5%;
 }
 
 #adInfo{
