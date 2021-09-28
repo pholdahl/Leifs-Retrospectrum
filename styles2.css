@@ -926,9 +926,8 @@ and (-webkit-min-device-pixel-ratio: 1){
     }
   }
 
-  /* @media only screen and (orientation: landscape){
+  @media only screen and (orientation: landscape){
     .turndevice{
-      grid-area: header main footer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -949,4 +948,4 @@ and (-webkit-min-device-pixel-ratio: 1){
       display: none;
     }
 
-  } */
+  }
