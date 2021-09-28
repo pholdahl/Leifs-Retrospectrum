@@ -327,11 +327,7 @@ h2 {
   height: auto;
 }
 
-figure {
-  width: 300px;
-  display: block;
-  overflow: hidden;
-}
+
 img {
   width: 50%;
 }
@@ -482,7 +478,13 @@ img {
   font-size: 1rem;
 }
 
-#asciiBildeAvMeg {
+#adInfoContainer {
+  margin: 0 auto;
+  
+}
+
+#adInfo{
+  text-align: center;
   font-size: 1rem;
   white-space: pre;
   text-shadow: 0px 0px 6px white;
@@ -495,17 +497,11 @@ img {
   padding: 20px;
 }
 
-#madeOf {
-font-size: 1.1rem;
-white-space: pre;
-text-shadow: 0px 0px 6px white;
-}
-
 .hidden {
   display: none;
 }
 
-.ascii {
+.showAdInfo {
   /* text-align: center; */
   font-size: 0.6rem;
   overflow: hidden;
@@ -519,19 +515,27 @@ text-shadow: 0px 0px 6px white;
   padding: 20px;
 }
 
-.sitecreators {
+.showAdInfo2 {
   text-align: center;
   font-size: 1rem;
   overflow: hidden;
   display: block;
 }
 
-#creators {
+#adInfo2Container{
+  max-width: 800px;
+}
+
+#adInfo2 {
   font-size: 1.2rem;
   width: 100%;
   height: 100%;
 
 }
+
+/* .showAdInfo {
+  max-width: 400px;
+} */
 
 blockquote {
   max-width: 650px; 
