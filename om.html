@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Retropod</title>
+</head>
+<body>
+<!-- Monitoren som bakgrunnsbilde inkludert alt som skal vises på selve displayet -->
+    <div class="bgcontainer">
+        <div class="onLight">
+        </div>
+        <main class="onMonitor">
+
+<!-- Hovedmeny -->
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">START</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="retropod.html">RETROPOD</a></li>
+                        <li><a href="om.html" style="background-color: black; color: white;">OM</a></li>
+                    </ul>
+                </nav>
+            </header>
+<!-- Slutt på hovedmeny -->
+
+<!-- Informasjon på selve displayet -->
+            <section class="sectionA">
+                <h1 class="headline">
+                    OM NETTSIDEN
+                </h1>
+                <p class="textWithSpace">Her kommer det masse info om hvordan og hvorfor vi bygde nettsiden</p>
+                <p class="textWithSpace">Det som står skrevet her nå er bare for å fylle opp siden med noe</p>
+                    <hr>
+                <p class="textWithSpace">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni blanditiis qui delectus aperiam doloremque neque distinctio quae eveniet, voluptatum aut repellendus maiores quo, itaque animi debitis, ratione repellat autem! Suscipit adipisci voluptas ullam eius. Repellat, molestiae illum commodi sint aspernatur tempora saepe aut? Voluptate, dolores. Atque ea qui inventore ex aspernatur veniam voluptatibus repudiandae saepe labore nemo esse, doloribus accusamus quae voluptas ut. Autem, dolorem nihil alias dolorum porro, quia sapiente, ad ipsam quidem iste aliquam sed non suscipit sunt quo quos quibusdam enim eum! Itaque earum, natus quas sed perferendis aspernatur officiis, illo, fugiat cumque beatae similique sit. Magni!
+                </section>
+        </main>
+<!-- Slutt på iformasjon på selve displayet -->
+
+
+<!-- Knappeseksjonen på monitoren inkludert postit lapper -->
+        <section class="sectionB">
+            <div class="postit-1-wrapper">
+                <figure class="postit-1">
+                    <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
+                    <figcaption>
+
+Sorte 
+   knapper
+  =
+Resumé
+                    </figcaption>
+                </figure>        
+            </div>
+            <div class="postit-2">
+                <figure class="postit-2-wrapper">
+                    <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
+                    <figcaption>
+                        
+Hvite 
+   knapper
+   =
+ Python 
+   kode
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="blackButtons"><a href="#adInfo" id="btn1" class="button" onclick="toggleHide()"> </a></div>
+            <div class="whiteButtons"><a href="#adInfo2" id="btn2" class="button" onclick="toggleHide2()"> </a></div>
+        </div>
+<!-- Slutt på knappeseksjonen på selve monitoren inkludert postit lappene -->
+<!-- Slutt på monitoren som bakgrunnsbilde inkludert alt som skal vises på selve displayet -->
+
+
+<!-- Alt som er nedenfor monitoren som quotes, og ekstra informasjon -->
+        <section class="sectionC hide" >
+            <figure class="quoteContainer">
+                <blockquote class="quote">
+                    <p>
+                        “Where is the ‘any’ key?”
+                    </p>
+                </blockquote>
+                <figcaption>
+                    - Var 
+                    <cite>
+                        <a href="https://www.youtube.com/watch?v=st6-DgWeuos" target="_blank">
+                        Homer Simpsons</a> respons
+                        til meldingen "Press any key".
+                    </cite>
+                </figcaption>
+            </figure>
+
+<!--    Første setning i adInfo kan skrives fram til pilspissen                  -->
+            <aside id="adInfoContainer" class="hidden">
+                <p id="adInfo">
+Her skal det komme noe mere info om Retropodden!
+                </p>
+            </aside>
+<!--Resten av setningene kan skrives fram til denne pilspissen-->
+
+<!--    Første setning  i adInfo2 kan skrives fram til pilspissen                 -->
+            <aside id="adInfo2Container" class="hidden">
+                <p id="adInfo2"> 
+Her skal det komme noe enda mere spennende!
+                </p>
+            </aside>
+<!--Resten av setningene kan skrives fram til denne pilspissen-->
+
+        </section>
+<!-- Slutt på alt som er nedenfor monitoren som quotes, og ekstra informasjon -->
+
+
+    <footer>
+        <p>pholdahl &copy; 2021</p>
+    </footer>
+    <div class="turndevice">
+        <p>
+            Please turn your device in portrait mode.
+        </p>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>

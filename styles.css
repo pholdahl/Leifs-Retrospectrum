@@ -35,7 +35,6 @@
 /* --main-white: white; */
 
 * {
-  /* font-size: px; */
   margin: 0px;
   padding: 0px;
   z-index: 1;
@@ -51,7 +50,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  font-size: var(--font-size);
   /* outline: solid teal 3px; */
   width: var(--device-width);
   min-height: 100vh;
@@ -69,7 +67,7 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  outline: solid red 1px;
+  /* outline: solid red 1px; */
   background-image: url(sonyMonitorTiny.png);
   background-position: top center;
   background-repeat: no-repeat;
@@ -186,7 +184,7 @@ body {
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 5), inset 0px 0px 50px 10px rgba(0, 0, 0, 5);
   border-radius: 10% 10% 10% 10%;
   overflow: hidden;
-  outline: purple solid 3px;
+  /* outline: purple solid 3px; */
   margin-bottom: var(--monitor-top-height);
   overflow-y: scroll;
 }
@@ -212,7 +210,7 @@ Position fixed gjør at skjerm linjene ikke forsvinner oppover når man scroller
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
   overflow: hidden;
-  outline: green solid 3px;
+  /* outline: green solid 3px; */
 }
 
 header {
@@ -230,7 +228,7 @@ header {
   /* outline: hotpink solid 3px; */
   background-color: var(--main-white);
   box-shadow: 0px 0px 5px 1px var(--main-white);
-  outline: solid orange 3px;
+  /* outline: solid orange 3px; */
 
 }
 
@@ -262,7 +260,7 @@ header {
   flex: 1 1 auto;
   overflow-y: scroll;
   padding-left: 1rem;
-  outline: yellow solid 3px;
+  /* outline: yellow solid 3px; */
 
 }
 
@@ -277,7 +275,7 @@ header {
 
 .textWithSpace {
   margin-top: 2%;
-  outline: hotpink solid 3px;
+  /* outline: hotpink solid 3px; */
 
 }
 
@@ -285,24 +283,24 @@ header {
   list-style-type: none;
   align-items: flex-start;
   justify-self: flex-start;
-  outline: hotpink solid 3px;
+  /* outline: hotpink solid 3px; */
 }
 
 .sectionA a {
   text-decoration: none;
   text-decoration: underline;
   color: var(--main-white);
-  outline: hotpink solid 3px;
+  /* outline: hotpink solid 3px; */
 }
 
 h1{
   text-shadow: 0 0 3px white;
-  outline: red solid 3px;
+  /* outline: red solid 3px; */
 }
 
 h2 {
   margin-top: 5%;
-  outline: hotpink solid 3px;
+  /* outline: hotpink solid 3px; */
   text-decoration: underline;
 }
 
@@ -316,7 +314,7 @@ h3 {
     font-size: 2em;
     white-space: nowrap;
     overflow: hidden;
-    outline: hotpink solid 3px;
+    /* outline: hotpink solid 3px; */
 }
 
 .sectionB{
@@ -496,25 +494,9 @@ img {
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  outline: pink solid 3px;
   padding: 0 1rem;
   width: 100%;
 }
-
-/*
-<section class="sectionC hide" >
-            <figure class="quoteContainer" style="background-color: rgba(0, 0, 0, 0.447); margin: 5% 5%; z-index: -1; border-radius: 5%;">
-                <blockquote class ="quote" style="text-align: center; padding: 5% 5%; max-width: 650px; margin: 0 auto;">
-                    <p style="background-color: rgba(128, 128, 128, 0.269);">
-                        "the cake is a lie. the cake is a lie. the cake is a lie. the cake is a lie."
-                    </p>
-                </blockquote>
-                <figcaption style="padding-left: 5%; padding-bottom: 5%;">
-                    - Er en velkjent frase fra
-                    <cite><a href="https://store.steampowered.com/app/400/Portal/" target="_blank">Portal</a></cite>
-                    spillene, produsert av Valve.
-                </figcaption>
-*/
 
 .quoteContainer {
   width: 18rem;
@@ -612,14 +594,30 @@ footer{
  color: rgba(128, 128, 128, 0.427);
 }
 
-/* Andre sider enn index */
+/* ---------------------------- Andre sider enn index ---------------------------- */
 
 .firstArticle {
   text-decoration: underline;
 }
 
+.subheading {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
 
-/* Animation */
+.audioPlayer {
+  display: block;
+  margin: 5% auto;
+  width: 90%; 
+  height: 5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 10px black;
+  background-color: white;
+}
+
+
+/* ---------------------------- Animation ----------------------------*/
 .terminal1 {
     animation: typewriter 1s steps(25) 500ms 1 normal both,
                blinkTextCursor 400ms steps(25) 13 normal,
