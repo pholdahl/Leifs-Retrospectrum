@@ -4,76 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
-    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Leifs Retrospectrum</title>
 </head>
 <body>
-    <div class="bgcontainer">
-        <img class="bgimg" src="sonyMonitorTiny.png" alt="Background">
+<!-- Monitoren som bakgrunnsbilde inkludert alt som skal vises på selve displayet -->
+    <div class="bgcontainer hide">
+        <div class="onLight">
+        </div>
+        <main class="onMonitor">
+
+<!-- Hovedmeny -->
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html" style="background-color: black; color: white;">START</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="retropod.html">RETROPOD</a></li>
+                        <li><a href="om.html">OM</a></li>
+                    </ul>
+                </nav>
+            </header>
+<!-- Slutt på hovedmeny -->
+
+<!-- Animert text på selve displayet -->
+            <section class="sectionA">
+                <h1 class="headline terminal1">
+                    LEIFS RETROSPECTRUM
+                </h1>
+                <p>
+                    <span class="infoAll terminal2">Velkommen til mitt retrospectrum!</span>
+                    <span class="infoAll terminal3">Et lite sted på verdensveven der jeg</span> 
+                    <span class="infoAll info3 terminal4">deler alt av rariterer jeg har</span>
+                    <span class="infoAll info4 terminal5">drevet med de siste 30 årene.</span>
+                </p>
+                <p>
+                    <span class="infoAll info5 terminal6">Her kan du blant annet finne:</span>
+                    <span class="infoAll info6 terminal7">@leif:/media/<a href="#">Musikk</a></span>
+                    <span class="infoAll info7 terminal8">@leif:/dev/<a href="#">Podcast</a></span>
+                    <span class="infoAll info8 terminal9">@leif:/usr/<a href="#">Retromaskiner_og_spill</a></span>
+                    <span class="infoAll info9 terminal10">@leif:/sbin/<a href="#">Egenutviklet_programvare</a></span>
+                    <span class="infoAll info10 terminal11"> &nbsp;</span>
+                </p>
+            </section>
+        </main>
+<!-- Slutt på animert text på selve monitoren-->
+
+
+<!-- Knappeseksjonen på selve monitoren inkludert postit lapper -->
+        <section class="sectionB hide">
+            <div class="postit-1-wrapper">
+                <figure class="postit-1">
+                    <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
+                    <figcaption>
+
+Sorte 
+   knapper
+  =
+ Om meg
+                    </figcaption>
+                </figure>        
+            </div>
+            <div class="postit-2">
+                <figure class="postit-2-wrapper">
+                    <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
+                    <figcaption>
+
+Hvite 
+   knapper
+    =
+ Bilde av 
+    meg
+                    </figcaption>
+                </figure>
+            </div>
+
+<!-- Hvite og svarte knapper -->
+            <div class="blackButtons"><a href="#adInfo" id="btn1" class="button" onclick="toggleHide()"> </a></div>
+            <div class="whiteButtons"><a href="#adInfo2" id="btn2" class="button" onclick="toggleHide2()"> </a></div>
+        </section>
+<!-- Slutt på hvite og svarte knapper -->
+
     </div>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">RESUME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">ABOUT</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- 
-            Image and description about you (make sure you use proper semantic tags)
-            Text introducing yourself
-            List of hobbies
-            A quotation from a book, song, or movie 
-        -->
-        <section class="sectionA">
-            <h1 class="headline terminal1">
-                <b>LEIFS</b> RETROSPECTRUM
-            </h1>
-            <p>
-                <span class="info1 terminal2">Velkommen til mitt retrospectrum!</span>
+<!-- Slutt på knappeseksjonen på selve monitoren inkludert postit lappene -->
+<!-- Slutt på monitoren som bakgrunnsbilde inkludert alt som skal vises på selve displayet -->
 
-                <span class="info2 terminal3">Mitt lille sted på verdensveven, hvor jeg deler</span> 
 
-                <span class="info3 terminal4">jeg deler alt av rariterer jeg har</span>
+<!-- Alt som er nedenfor monitoren som quotes, og ekstra informasjon -->
+        <section class="sectionC hide" >
+            <figure class="quoteContainer">
+                <blockquote class="quote">
+                    <p>
+                        “The Internet? We are not interested in it.”
+                    </p>
+                </blockquote>
+                <figcaption>
+                    - Var noe selveste 
+                    <cite>
+                        <a href="https://www.ft.com/content/b33397b8-5137-11da-ac3b-0000779e2340" target="_blank">
+                        Bill Gates</a>    
+                    </cite>
+                    klarte å lire av seg i 1993.
+                </figcaption>
+            </figure>
 
-                <span class="info4 terminal5">drevet med de siste 30 årene.</span>
-            </p>
-            <p>
-                <span class="info5 terminal6">Her kan du blant annet finne:</span>
-                <span class="info6 terminal7">- <a href="#">Musikk</a></span>
-                <span class="info7 terminal8">- <a href="#">Podcast</a></span>
-                <span class="info8 terminal9">- <a href="#">Retromaskiner og retrospill</a></span>
-                <span class="info9 terminal10">- <a href="#">Egenutviklet programmvare</a></span>
-                <span class="info10 terminal11"> &nbsp;</span>
 
-            </p>
+<!--    Første setning i adInfo2 kan skrives fram til pilspissen                  -->
+            <aside id="adInfoContainer" class="hidden">
+                <p id="adInfo">    
+|                      &lt;((((((\\\             |
+|                       /      . }\           |
+|                       ;--..--._|}           |
+|    (\                 '--/\--'  )           |
+|     \\                | '-'  :'|            |
+|      \\               . -==- .-|            |
+|       \\               \.__.'   \--._       |
+|       [\\          __.--|       //  _/'--.  |
+|       \ \\       .'-._ ('-----'/ __/      \ |
+|        \ \\     /   __>|      | '--.       ||
+|         \ \\   |   \   |     /    /       / |
+|          \ '\ /     \  |     |  _/       /  |
+|           \  \       \ |     | /        /   |
+| Leif       \  \      \        /             |
+-----------------------------------------------
+                </p>
+            </aside>
+<!--Resten av setningene kan skrives fram til denne pilen-->
+
+
+<!--    Første setning  i adInfo2 kan skrives fram til pilspissen                 -->
+            <aside id="adInfo2Container" class="hidden">
+                <p id="adInfo2">Jeg heter Leif og driver med masse forskjellige ting. 
+Min største hobby er kanskje å samle på retrodatamaskiner.
+Jeg er ellers veldig glad i musikk,og musikkproduksjon.
+
+Jeg liker også å drive med programmering.Jeg har holdt på 
+en del med Python tidligere, men nå lærer jeg meg Java.
+Jeg bor i Oslo.</p>
+            </aside>
+<!--Resten av setningene kan skrives fram til pilspissen-->
         </section>
-        <section class="sectionB">
-            <div class="imagebutton"> </div>
-            <div class="makerbutton"> </div>
-        </section>
-        <section class="sectionC hide">
-            <p class="buttons hide">
-                Hvite knapper = bildet av meg.
-                Svarte knapper = de som har laget siden.
-            </p>
-        </section>
-        <aside>
-        </aside>
-        <aside>
-            <div class="makerbutton"> </div>
-        </aside>
-    </main>
+<!-- Slutt på alt som er nedenfor monitoren som quotes, og ekstra informasjon -->
+
+
     <footer>
-
+        <p>pholdahl &copy; 2021</p>
     </footer>
+    <audio id="my_audio"  src="/sound/sound-of-old-computer.mp3" type="audio/mp3"></audio>
     <div class="turndevice">
         <p>
             Please turn your device in portrait mode.
         </p>
     </div>
+    <script>
+
+        var audio = document.getElementById("my_audio");
+        sample.play();
+        // var audio = document.getElementById("my_audio")
+        // window.onload = function() {
+        //     audio.volume = 0.2
+        //     audio.play();
+        // }
+    </script>
 </body>
 </html>
+
+
+<!-- https://freesound.org/embed/sound/iframe/417746/simple/small/ -->

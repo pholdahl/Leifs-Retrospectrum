@@ -6,54 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
     <title>Portfolio</title>
 </head>
-<body>
-    <div class="bgcontainer">
-        <!-- <img class="bgimg" src="sonyMonitorTiny.png" alt="Background"> -->
+<body> 
+<!-- Monitoren som bakgrunnsbilde inkludert alt som skal vises på selve displayet -->
+    <div class="bgcontainer hide">
         <div class="onLight">
         </div>
         <main class="onMonitor">
+
+<!-- Hovedmeny -->
             <header>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="index2.html">START</a></li>
+                        <li><a href="index.html">START</a></li>
                         <li><a href="portfolio.html" style="background-color: black; color: white;">PORTFOLIO</a></li>
-                        <li><a href="retrodata.html">RETRODATA</a></li>
                         <li><a href="retropod.html">RETROPOD</a></li>
+                        <li><a href="om.html">OM</a></li>
                     </ul>
                 </nav>
             </header>
-                <!-- 
-                    Image and description about you (make sure you use proper semantic tags)
-                    Text introducing yourself
-                    List of hobbies
-                    A quotation from a book, song, or movie 
-                -->
-            <section class="sectionA screenInformation">
+<!-- Slutt på hovedmeny -->
+
+<!-- Informasjon på selve displayet -->
+            <section class="sectionA">
                 <h1 class="headline">
                     PORTFOLIO
                 </h1>
                 <h2>
                     Programmering
                 </h2>
-                <figure class="images">
-                    <img src="images/simulator.jpg" alt="skjermbilde">
-                </figure>
                 <p class="textWithSpace">
                     I 2020 programmerte jeg en tre-åring simmulator i et forsøk på å lære meg python. 
                     Samboeren og treåringen skulle på tur til Trondheim og jeg tenkte det ville være fint å ha en 
                     liten virtuell treåring som kunne holde meg med selskap dersom det ble for ensomt.
                     Python koden kan du se ved å trykke på de hvite knappene nederst på monitoren.
                 </p>
+                <figure class="images" alt="Bilde av inputboks til programmet">
+                    <img src="images/simulator.jpg" alt="skjermbilde">
+                </figure>
                 <h2>
                     Musikk
                 </h2>
-                <figure class="images">
-                    <img src="images/rack.JPG" alt="rackutstyr">
-                </figure>
                 <p class="textWithSpace">
                     I 2002 var jeg solist på et verk av komponist Bertil Palmar Johansen ved navn Tors Hammer. 
                     Verket ble fremført i Olavshallen med Trondheim symfoniorkester, Nidarosdomens jentekor og en håndfull solister. 
@@ -78,12 +74,12 @@
                     Jeg har en håndfull nesten-ferdige låter liggende på harddisken, men bare en er tilgjengelig på nett.
                     Den kan du lytte til ved å trykke på de hvite knappene.
                 </p>
+                <figure class="images">
+                    <img src="images/rack.JPG" alt="rackutstyr">
+                </figure>
                 <h2>
                     Lydbibliotek
                 </h2>
-                <figure class="images">
-                    <img src="images/siemens.JPG" alt="skjermbilde">
-                </figure>
                 <p class="textWithSpace">
                     I 2020 hadde jeg gleden av å kunne bidra til Soundly's stadig voksende lydbibliotek med et bibliotek rettet mot gamle datamaskiner. 
                     Endelig et prosjekt hvor jeg fikk bruk for alle de gamle datamaskinene mine OG alt det råflotte musikkstudio-utstyret.
@@ -93,13 +89,38 @@
                     Commodore 64, 128, flere Amiga-maskiner, både 68k og powerPC Macintosh, en gammel 8088 DOS-maskin og en Siemens Nixdorf Pentium var blant maskiner som er representert. 
                     Nesten alt som lagde en lyd ble tatt opp og lagt ved, uansett hvor lite og ubetydelig det måtte være. 
                     Jeg håper det sitter en lyddesigner et sted og koser seg med alle de merkelige lydene disse gamle maskinene er i stand til å fise ut.
-                    <br>
-                    <br>
                 </p>
-                <p class="textWithSpace list">
+                <figure class="images">
+                    <img src="images/siemens.JPG" alt="skjermbilde">
+                </figure>
+                <h2>RETRODATA-SEKSJONEN</h2>
+                <p class="textWithSpace">
+                    Velkommen til Retrodataseksjonen! Det stedet hvor jeg legger ut
+                    info om alt av retrodatamaskiner og retrokonsoller jeg har 
+                    anskaffet meg opp i gjennom årene. 
                 </p>
+                <h3>Commodore 128D (C128D)</h3>
+                <ul class="dataList">
+                    <li><strong>Utgitt:</strong> Januar 1987</li>
+                    <li><strong>Pris:</strong> Omtrent 4000 kr</li>
+                    <li><strong>Prosessor:</strong> MOS 8502 og Zilog Z-80A</li>
+                    <li><strong>Lyd:</strong> 3 kanaler med lydmagi</li>
+                    <li><strong>Minne:</strong> 128k</li>
+                    <li><strong>Video:</strong> 16 farger, 640x200, 40/80 column</li>
+                    <li><strong>Porter:</strong> Seriell, kompositt video, RF video, RGBi video og ekspansjonsport</li>
+                    <li><strong>Lagring:</strong> Intern 340k 5.25" floppy</li>
+                    <li><strong>System:</strong> BASIC i rom, CP/M på floppy</li>
+                </ul>
+                <figure class="images">
+                    <img src="images/c128.jpg" alt="C128">
+                </figure>
+                <br>
             </section>
         </main>
+<!-- Slutt på iformasjon på selve displayet -->
+
+
+<!-- Knappeseksjonen på monitoren inkludert postit lapper -->
         <section class="sectionB">
             <div class="postit-1-wrapper">
                 <div class="postit-1">
@@ -108,8 +129,8 @@
 
 Sorte 
    knapper
-    =
-Musikk
+=
+Resumé
                     </figcaption>
             </div>        
             </div>
@@ -117,6 +138,7 @@ Musikk
                 <div class="postit-2-wrapper">
                     <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
                     <figcaption>
+
 Hvite 
    knapper
     =
@@ -125,26 +147,34 @@ Python
                     </figcaption>
                 </div>
             </div>
-            <div class="imagebutton"><a href="#bildeAvMeg" id="btn1" class="button" onclick="toggleHide()"> </a></div>
-            <div class="makerbutton"><a href="#creators" id="btn2" class="button" onclick="toggleHide2()"> </a></div>
-        </section>
+            <div class="blackButtons"><a href="#adInfo" id="btn1" class="button" onclick="toggleHide()"> </a></div>
+            <div class="whiteButtons"><a href="#adInfo2" id="btn2" class="button" onclick="toggleHide2()"> </a></div>
     </div>
-        <section class="sectionC hide">
-            <figure style="background-color: rgba(0, 0, 0, 0.447); margin: 5% 5%; z-index: -1; border-radius: 5%;">
-                <blockquote style="text-align: center; padding: 5% 5%;">
-                    <p style="background-color: rgba(128, 128, 128, 0.269);">
-                        "the cake is a lie. the cake is a lie. the cake is a lie. the cake is a lie."
+<!-- Slutt på knappeseksjonen på selve monitoren inkludert postit lappene -->
+<!-- Slutt på monitoren som bakgrunnsbilde inkludert alt som skal vises på selve displayet -->
+
+
+<!-- Alt som er nedenfor monitoren som quotes, og ekstra informasjon -->
+        <section class="sectionC hide" >
+            <figure class="quoteContainer">
+                <blockquote class="quote">
+                    <p>
+                        “If you think your users are idiots, only idiots will use it.”
                     </p>
                 </blockquote>
-                <figcaption style="padding-left: 5%; padding-bottom: 5%;">
-                    - Er en velkjent frase fra
-                    <cite><a href="https://store.steampowered.com/app/400/Portal/" target="_blank">Portal</a></cite>
-                    spillene, produsert av Valve.
+                <figcaption>
+                    - Godt sagt av ingen ringere enn 
+                    <cite>
+                        <a href="https://www.computerhope.com/people/linus_torvalds.htm" target="_blank">
+                        Linus Thorvaldsen</a>.   
+                    </cite>
                 </figcaption>
             </figure>
-            <aside id="bildeAvMeg" class="hidden" style="white-space: pre;">
-                <code style="white-space: pre; text-align: left;">
-import random
+
+
+<!--         Akkurat denne adInfo seksjonen er ment for å vise kode, og har mindre font-size enn ellers kan skrives fram til pilspissen                                                  -->
+            <aside id="adInfoContainer" class="hidden">
+                <p class="code">import random
 import time
 import datetime
 import threading
@@ -208,7 +238,8 @@ class TreGUI:
             self.master.update()  #den opdaterer GUIen
         print("MEP:" ,self.mep)
         self.barnet_sier.set('3-åringen kommer inn i rommet. \n
-        Han tasser litt rundt før han stopper brått og ser opp med et tankefult blikk.')
+        Han tasser litt rundt før han stopper brått og ser opp 
+        med et tankefult blikk.')
         self.progress += 1
         print(str(self.barnet_sier))
     def myClick(self):
@@ -231,7 +262,8 @@ class TreGUI:
         self.t1.cancel()
     def hallo(self):
         t0 = datetime.datetime.now().second
-        while self.barn.mase_index &lt; len(self.barn.maseliste) and not 'ja' in self.respons:
+        while self.barn.mase_index &lt; len(self.barn.maseliste) and 
+        not 'ja' in self.respons:
             self.barnet_sier.set(self.barn.maseliste[self.barn.mase_index])
             self.Label2.text = self.barnet_sier
             print(self.barnet_sier.get())
@@ -259,7 +291,8 @@ class TreGUI:
                 self.svar = self.respons
                 self.svar = self.svar.translate({ord(i): None for i in '!?.,:;'})
                 self.svar = self.svar.lower().split()
-                self.svarliste = [x for x in self.svar if x not in self.barn.ikke_ord]
+                self.svarliste = [x for x in self.svar if x 
+                not in self.barn.ikke_ord]
                 if len(self.svarliste) &lt; 1:
                     self.barnet_sier.set('Det er ikke noe årntli svar!')
                 else:
@@ -268,17 +301,108 @@ class TreGUI:
                     self.responded = False
             self.master.update()
             time.sleep(0.1)
-        self.barnet_sier.set('Åjah...", sier 3-åringen mens han tussler rolig ut av rommet.\n
-        Gratulerer! Du har lykkes som forelder, enn så lenge. Lykke til neste gang!')
+        self.barnet_sier.set('Åjah...", sier 3-åringen mens han tussler rolig ut av 
+        rommet.\n Gratulerer! Du har lykkes som forelder, enn så lenge. 
+        Lykke til neste gang!')
 root = Tk()
 minGUI = TreGUI(root)
 root.mainloop()
-                </code>
+                </p>
             </aside>
-            <aside id="creators" class="hidden">
-                <iframe width="90%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/686985997&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
-            </aside>
-        </section>
+<!--        Resten av koden kan skrives fram til denne pilspissen                 -->
+
+
+<!--    Første setning  i adInfo2 kan skrives fram til pilspissen                 -->
+<aside id="adInfo2Container" class="hidden">
+    <p id="adInfo2">                         RESUMÉ
+
+Leif Kielland
+Sanglærer | Sanger
+
+Asperudlia 38, 1258 Oslo
+92465969 | LeifKielland@runbox.com
+Født: 27. juni 1985
+
+UTDANNING
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Mastergrad                                            UiO
+Musikkvitenskap                       aug 2011 – jun 2014
+
+Bachelorgrad                                          UiO
+Musikkvitenskap                       aug 2008 – jun 2011
+
+Folkehøgskole                                   Agder FHS
+Jazzlinja                             aug 2004 – mai 2005
+
+Musikk, dans og drama                         Heimdal VGS
+Musikklinja                           aug 2001 – jun 2004
+
+
+UTVALGT ERFARING
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Sangpedagog                              mai 2010 – d. d.
+MUNO musikkskole
+Underviser barn og voksne i sangteknikk, musikkteori 
+og -formidling. 
+
+Sangpedagog                              nov 2013 – d. d.
+LUDO musikkskole
+Underviser barn og voksne i sangteknikk, musikkteori 
+og -formidling. 
+
+Studiotekniker/Vokalcoach             Aug 2014 – aug 2015
+Oslo Eventstudio                                   
+Studioteknikk og mixing, låtskriving/arrangering, 
+nnspilling av musikkvideo og fotografering.
+
+
+ANNEN ERFARING
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+- Skrev masteravhandlingen «Kropp og vilje i sang-
+undervisningen – Metafor, kroppsspråk og fysiologi i sang 
+og nyere sangpedagogisk litteratur». I oppgaven gjorde jeg 
+rede for sang og sangpedagogikk i lys av nyere forskning 
+innenfor psykologi, kognisjon, anatomi og fysiologi.
+
+- Erfaring som sanger og gitarist på flere musikk-prosjekter 
+og plateutgivelser.
+
+- Flere oppdrag som komponist, lyddesigner og lydprodusent 
+på kortfilm/studentprosjekter.
+
+- Solist for Trondheim symfoniorkester under fremføring og 
+innspilling av verket «Tors Hammer: Bilder fra Norrøn» 
+i Olavshallen i 2002.
+
+FERDIGHETER
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+Musikkrelatert programvare
+- ProTools og Harrison Mixbus: Meget god kompetanse. 
+    Også i bruk av både digitalt og analogt utstyr.
+
+- Sibelius: Meget god kompetanse. 
+
+- Logic Pro: God kompetanse.
+
+- Microsoft Office: God Kompetanse.
+
+Operativsystemer
+- Windows: Meget god kjennskap.
+
+- MacOS: Meget god kjennskap.
+
+- Linux-systemer: God kjenskap.
+
+Språk
+- Norsk morsmål.
+- Engelsk flytende skriftlig og muntlig.
+
+
+Jeg bor i Oslo.</p>
+</aside>
+<!--Resten av setningene kan skrives fram til pilspissen-->
+</section>
+<!-- Slutt på alt som er nedenfor monitoren som quotes, og ekstra informasjon -->
     <footer>
         <p>pholdahl &copy; 2021</p>
     </footer>
