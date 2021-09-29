@@ -68,7 +68,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   /* outline: solid red 1px; */
-  background-image: url(/images/sonyMonitorTiny.png);
+  background-image: url(images/sonyMonitorTiny.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 136%;
