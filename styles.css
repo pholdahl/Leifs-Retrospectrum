@@ -89,89 +89,10 @@ body {
   /* outline: blue solid 3px; */
 }
 
-@keyframes ligthsOn {
-  from {
-    opacity: 0.5;
-  }
-  4% {
-    opacity: 0.7;
-  }
-  /* 8% {
-    opacity: 0.45;
-  } */
-  12% {
-    opacity: 0.65;
-  }
-  /* 16% {
-    opacity: 0.30;
-  } */
-  20% {
-    opacity: 0.5;
-  }
-  24% {
-    opacity: 0.9;
-  }
-  /* 28% {
-    opacity: 0.25;
-  } */
-  /* 32% {
-    opacity: 0.30;
-  } */
-  36% {
-    opacity: 1;
-  }
-  /* 40% {
-    opacity: 0.4;
-  } */
-  44% {
-    opacity: 0.6;
-  }
-  /* 48% {
-    opacity: 0.35;
-  } */
-  /* 52% {
-    opacity: 0.20;
-  } */
-  56% {
-    opacity: 0.70;
-  }
-  60% {
-    opacity: 0.5;
-  }
-  64% {
-    opacity: 0.9;
-  }
-  /* 68% {
-    opacity: .35;
-  } */
-  72% {
-    opacity: 1;
-  }
-  /* 76% {
-    opacity: 0.4;
-  } */
-  80% {
-    opacity: .65;
-  }
-  /* 84% {
-    opacity: 0.40;
-  }
-  88% {
-    opacity: 0.35;
-  } */
-  92% {
-    opacity: 1;
-  }
-  /* 96% {
-    opacity: 0.3;
-  } */
-  to {
-    opacity: 0.5;
-  }
-}
 
+
+/* ------------------------------------ Content on the display -------------------------------------- */
 .onMonitor {
-  /* flex: 1 1 600px; */
   width: auto;
   display: block;
   position: relative;
@@ -222,8 +143,6 @@ header {
   /* outline: hotpink solid 3px; */
   background-color: var(--main-white);
   box-shadow: 0px 0px 5px 1px var(--main-white);
-  /* outline: solid orange 3px; */
-
 }
 
 .navbar > ul {
@@ -319,6 +238,19 @@ h3 {
     /* outline: hotpink solid 3px; */
 }
 
+img {
+  display: block;
+  margin: 2% auto;
+  width: 50%;
+  /* max-width: 100%; */
+}
+
+.dataList > li{
+  list-style-type: none;
+}
+
+
+/* ----------------------------- Content beneath the display like the buttons --------------------------- */
 .sectionB{
   display: flex;
   flex: 1 1 auto;
@@ -335,18 +267,6 @@ h3 {
   /* text-align: center; */
   width: 100%;
   height: auto;
-}
-
-
-img {
-  display: block;
-  margin: 2% auto;
-  width: 50%;
-  /* max-width: 100%; */
-}
-
-.dataList > li{
-  list-style-type: none;
 }
 
 .blackButtons {
@@ -367,10 +287,6 @@ img {
   width: 100%;
   height: 100%;
   z-index: 1;
-}
-
-.hidden {
-  display: none;
 }
 
 .whiteButtons {
@@ -593,9 +509,11 @@ footer{
  margin-top: auto;
  text-align: center;
  color: rgba(128, 128, 128, 0.427);
+ margin-top: 2rem;
 }
 
-/* ---------------------------- Andre sider enn index ---------------------------- */
+
+/* ---------------------------- Andre sider enn index ------------------------------- */
 
 .firstArticle {
   text-decoration: underline;
@@ -623,7 +541,89 @@ footer{
 }
 
 
-/* ---------------------------- Animation ----------------------------*/
+/* ------------------------------------- Animation ------------------------------------ */
+@keyframes ligthsOn {
+  from {
+    opacity: 0.5;
+  }
+  4% {
+    opacity: 0.7;
+  }
+  /* 8% {
+    opacity: 0.45;
+  } */
+  12% {
+    opacity: 0.65;
+  }
+  /* 16% {
+    opacity: 0.30;
+  } */
+  20% {
+    opacity: 0.5;
+  }
+  24% {
+    opacity: 0.9;
+  }
+  /* 28% {
+    opacity: 0.25;
+  } */
+  /* 32% {
+    opacity: 0.30;
+  } */
+  36% {
+    opacity: 1;
+  }
+  /* 40% {
+    opacity: 0.4;
+  } */
+  44% {
+    opacity: 0.6;
+  }
+  /* 48% {
+    opacity: 0.35;
+  } */
+  /* 52% {
+    opacity: 0.20;
+  } */
+  56% {
+    opacity: 0.70;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  64% {
+    opacity: 0.9;
+  }
+  /* 68% {
+    opacity: .35;
+  } */
+  72% {
+    opacity: 1;
+  }
+  /* 76% {
+    opacity: 0.4;
+  } */
+  80% {
+    opacity: .65;
+  }
+  /* 84% {
+    opacity: 0.40;
+  }
+  88% {
+    opacity: 0.35;
+  } */
+  92% {
+    opacity: 1;
+  }
+  /* 96% {
+    opacity: 0.3;
+  } */
+  to {
+    opacity: 0.5;
+  }
+}
+
+
 .terminal1 {
     animation: typewriter 1s steps(25) 500ms 1 normal both,
                blinkTextCursor 400ms steps(25) 13 normal,
@@ -847,9 +847,15 @@ footer{
     to{border-right-color: var(--main-white);}
   }
 
+/* ---------------------------------- Hinder landscape mode ------------------------------- */
+
+.hidden {
+    display: none;
+  }
+
 .turndevice {
 display: none;
-border: green solid 1px;
+/* border: green solid 1px; */
 text-align: center;
 }
 
@@ -858,10 +864,7 @@ display: block;
 color: white;
 }
 
-footer {
-  margin-top: 2rem;
-}
-
+/* ---------------------------------- Media Queries ------------------------------- */
 
 @media only screen 
 and (min-width: 1025px)
@@ -879,11 +882,11 @@ and (-webkit-min-device-pixel-ratio: 1){
     --typeLengthHeading: 8em;
   }
 
-  
   html {
     background-color: var(--BGcolor);
     height: auto;
   }
+
   .bgcontainer {
     background-size: 100%;
   }
@@ -972,9 +975,6 @@ and (-webkit-min-device-pixel-ratio: 1){
       --menu-height: 90px;
       --screen-height: 290px;
     }
-    /* body {
-      width: 414px;
-    } */
   }
 
   @media only screen 
@@ -998,45 +998,18 @@ and (-webkit-min-device-pixel-ratio: 1){
     :root {
       font-size: 2.2rem;
       --device-width: 1024px;
-      --menu-height: 180px;
+      --menu-height: 200px;
       --screen-height: 750px;
       --monitor-button-width: 155px;
       --monitor-button-section-height: 9.8rem;
     }
   }
 
-  /* @media only screen and 
-  (min-width: 1024px) and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape){
-    .turndevice{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: black;
-      width: 100%;
-      height: 100%;
-    }
-
-    body{
-      width: 100%;
-    }
-
-    .hide {
-      visibility: hidden;
-      display: none;
-    }
-
-  } */
-
   @media only screen and 
   (min-width: 375px) and (max-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape){
-    .turndevice{
+    .turndevice {
       display: flex;
       justify-content: center;
       align-items: center;
