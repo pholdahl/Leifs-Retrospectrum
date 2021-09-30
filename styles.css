@@ -27,7 +27,7 @@
     --monitor-button-width: 7rem;
     --postit-fontsize: 4.2rem;
     --typeLengthShort: 11rem;
-    --typeLengthMedium: 15rem;
+    --typeLengthMedium: 15.5rem;
     --typeLengthLong: 18rem;
     --typeLengthHeading: 18rem;
 }
@@ -192,9 +192,7 @@ body {
   display: none;
 }
 
-/* 
-Position fixed gjør at skjerm linjene ikke forsvinner oppover når man scroller på skjermen
-*/
+
 .onMonitor::after {
   flex: 1 1 auto;
   content: " ";
@@ -251,6 +249,13 @@ header {
 .navbar > ul > li > a:hover{
   background-color: black;
   color: white;
+}
+
+span.anchor {
+  display: block;
+  position: relative;
+  top: -2rem;
+  visibility: hidden;
 }
 
 .sectionA {
@@ -616,6 +621,11 @@ footer{
   background-color: white;
 }
 
+.asidePlayer {
+  width: 100%;
+  margin-top: 2%;
+}
+
 
 /* ---------------------------- Animation ----------------------------*/
 .terminal1 {
@@ -868,7 +878,7 @@ and (-webkit-min-device-pixel-ratio: 1){
     --monitor-button-width: 12.6rem;
     --monitor-button-section-height: 8rem;
     --typeLengthShort: 8.5em;
-    --typeLengthMedium: 12em;
+    --typeLengthMedium: 12.5em;
     --typeLengthLong: 14.5em;
     --typeLengthHeading: 8em;
   }
@@ -987,7 +997,7 @@ and (-webkit-min-device-pixel-ratio: 1){
 
   @media only screen 
   and (min-width: 1024px)
-  /* and (max-width: 1366px) */
+  and (max-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2){
     :root {
       font-size: 2.2rem;
@@ -999,7 +1009,17 @@ and (-webkit-min-device-pixel-ratio: 1){
     }
   }
 
-  /* @media only screen and (orientation: landscape){
+  @media only screen 
+  and (min-width: 375px) 
+  and (max-width: 667px)
+  and (min-width: 414px)
+  and (max-width: 736px)
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (min-width: 1024px)
+  and (max-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape){
     .turndevice{
       display: flex;
       justify-content: center;
@@ -1021,4 +1041,4 @@ and (-webkit-min-device-pixel-ratio: 1){
       display: none;
     }
 
-  } */
+  }
