@@ -61,7 +61,7 @@ body {
   box-shadow: 0 0 20px 20px black;
 }
 
-/* Background image */
+/* ------------------------------------ Background image -------------------------------------- */
 .bgcontainer {
   width: 100%;
   position: relative;
@@ -182,8 +182,7 @@ body {
   top: var(--monitor-top-height);
   height: var(--monitor-height);
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 5), inset 0px 0px 50px 10px rgba(0, 0, 0, 5);
-  border-radius: 10% 10% 10% 10%;
-  overflow: hidden;
+  border-radius: 10% 10%;
   /* outline: purple solid 3px; */
   margin-bottom: var(--monitor-top-height);
   overflow-y: scroll;
@@ -257,7 +256,7 @@ header {
 .sectionA {
   width: 100%;
   /* height: var(--screen-height); */
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
   overflow-y: scroll;
   padding-left: 1rem;
   /* outline: yellow solid 3px; */
@@ -269,7 +268,7 @@ header {
 }
 
 .sectionA > *{
-  font-size: 1.2rem;
+  font-size: var(--body-fonts);
   text-shadow: 0 0 4px white;
 }
 
@@ -290,6 +289,7 @@ header {
   text-decoration: none;
   text-decoration: underline;
   color: var(--main-white);
+  font-size: var(--body-fonts);
   /* outline: hotpink solid 3px; */
 }
 

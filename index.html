@@ -43,10 +43,10 @@
                 </p>
                 <p>
                     <span class="infoAll info5 terminal6">Her kan du blant annet finne:</span>
-                    <span class="infoAll info6 terminal7">@leif:/media/<a href="#">Musikk</a></span>
-                    <span class="infoAll info7 terminal8">@leif:/dev/<a href="#">Podcast</a></span>
-                    <span class="infoAll info8 terminal9">@leif:/usr/<a href="#">Retromaskiner_og_spill</a></span>
-                    <span class="infoAll info9 terminal10">@leif:/sbin/<a href="#">Egenutviklet_programvare</a></span>
+                    <span class="infoAll info6 terminal7">@leif:/media/<a id="musicLink" href="#" onclick="goToMusic()">Musikk</a></span>
+                    <span class="infoAll info7 terminal8">@leif:/dev/<a id="podcastLink" href="#">Podcast</a></span>
+                    <span class="infoAll info8 terminal9">@leif:/usr/<a id="retroLink" href="#">Retromaskiner_og_spill</a></span>
+                    <span class="infoAll info9 terminal10">@leif:/sbin/<a id="programmingLink" href="#">Egenutviklet_programvare</a></span>
                     <span class="infoAll info10 terminal11"> &nbsp;</span>
                 </p>
             </section>
@@ -153,7 +153,7 @@ Jeg bor i Oslo.</p>
     <footer>
         <p>pholdahl &copy; 2021</p>
     </footer>
-    <audio id="my_audio"  src="sound/sound-of-old-computer.mp3" type="audio/mp3"></audio>
+    <audio id="my_audio"  src="/sound/sound-of-old-computer.mp3" type="audio/mp3"></audio>
     <div class="turndevice">
         <p>
             Please turn your device in portrait mode.
@@ -161,8 +161,8 @@ Jeg bor i Oslo.</p>
     </div>
     <script>
 
-        var audio = document.getElementById("my_audio");
-        sample.play();
+        // var audio = document.getElementById("my_audio");
+        // sample.play();
         // var audio = document.getElementById("my_audio")
         // window.onload = function() {
         //     audio.volume = 0.2
