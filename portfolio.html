@@ -15,11 +15,11 @@
     <div class="bgcontainer hide">
         <div class="onLight">
         </div>
-        <main class="onMonitor">
+        <main class="onMonitor hide">
 
 <!-- Hovedmeny -->
-            <header>
-                <nav class="navbar">
+            <header class="hide">
+                <nav class="navbar hide">
                     <ul>
                         <li><a href="index.html">START</a></li>
                         <li><a href="portfolio.html" style="background-color: black; color: white;">PORTFOLIO</a></li>
@@ -31,7 +31,7 @@
 <!-- Slutt på hovedmeny -->
 
 <!-- Informasjon på selve displayet -->
-            <section class="sectionA">
+            <section class="sectionA hide">
                 <h1 class="headline">
                     PORTFOLIO
                 </h1>
@@ -121,8 +121,8 @@
 
 
 <!-- Knappeseksjonen på monitoren inkludert postit lapper -->
-        <section class="sectionB">
-            <div class="postit-1-wrapper">
+        <section class="sectionB hide">
+            <div class="postit-1-wrapper hide">
                 <figure class="postit-1">
                     <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
                     <figcaption>
@@ -134,7 +134,7 @@ Resumé
                     </figcaption>
                 </figure>        
             </div>
-            <div class="postit-2">
+            <div class="postit-2 hide">
                 <figure class="postit-2-wrapper">
                     <img src="https://i.ibb.co/JB8HGYW/postit-Tiny.png" alt="postitnote">
                     <figcaption>
@@ -313,8 +313,8 @@ root.mainloop()
 
 
 <!--    Første setning  i adInfo2 kan skrives fram til pilspissen                 -->
-<aside id="adInfo2Container" class="hidden">
-    <p id="adInfo2">                         RESUMÉ
+            <aside id="adInfo2Container" class="hidden">
+                <p id="adInfo2">                         RESUMÉ
 
 Leif Kielland
 Sanglærer | Sanger
@@ -401,16 +401,14 @@ Språk
 <!--Resten av setningene kan skrives fram til pilspissen-->
 </section>
 <!-- Slutt på alt som er nedenfor monitoren som quotes, og ekstra informasjon -->
-    <footer>
-        <p>pholdahl &copy; 2021</p>
+    <footer class="hide">
+        <p>&copy; 2021</p>
+        <p>Pål Holdahl | Sander Hjermstad | Leif Kielland</p>
     </footer>
     <div class="turndevice">
         <p>
-            Please turn your device in portrait mode.
+            Vennligst snu enheten din til portrettmodus.
         </p>
     </div>
-
-    <script>
-    </script>
 </body>
 </html>
