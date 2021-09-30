@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <title>Retropod</title>
+    <title>Om siden</title>
 </head>
 <body>
 <!-- Monitoren som bakgrunnsbilde inkludert alt som skal vises på selve displayet -->
@@ -35,14 +35,65 @@
                 <h1 class="headline">
                     OM NETTSIDEN
                 </h1>
-                <p class="textWithSpace">Her kommer det masse info om hvordan og hvorfor vi bygde nettsiden</p>
-                <p class="textWithSpace">Det som står skrevet her nå er bare for å fylle opp siden med noe</p>
+                <p class="textWithSpace">
+                    Denne nettsidens innhold og designuttrykket tar utgangspunkt i Leifs kjærlighet til retro datamaskiner. 
+                    Siden Leif fra før av, på eget initiativ, var i gang med en portfolio nettside som han allerede hadde fylt med masse innhold, 
+                    ble utfordringen å presentere dette innholdet på en måte som virkelig smaker retro.
+                </p>
+                <p class="textWithSpace">
+                    Vi gikk ikke gjennom noen form for strukturforslag på hvordan vi kan være sikker på å bruke mest mulig semantic tags i forkant av nettsidebyggingen. 
+                    Bruk av tags kom av seg selv, eller ble valgt bort på grunn av designet.
+                </p>
+                <p class="textWithSpace">
+                    Hele uttrykket er bygd opp rundt bakgrunnsbildet av en gammel Sony Trinitron CRT monitor, et høyt aktet samlerobjekt blant retrofantaster. 
+                    Med monitoren som utgangspunkt ønsket vi å mane fram følelsen av å virkelig sitte foran en gammel retro maskin fra 80-tallet.
+                </p>
                     <hr>
                 <p class="textWithSpace">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni blanditiis qui delectus aperiam doloremque neque distinctio quae eveniet, voluptatum aut repellendus maiores quo, itaque animi debitis, ratione repellat autem! Suscipit adipisci voluptas ullam eius. Repellat, molestiae illum commodi sint aspernatur tempora saepe aut? Voluptate, dolores. Atque ea qui inventore ex aspernatur veniam voluptatibus repudiandae saepe labore nemo esse, doloribus accusamus quae voluptas ut. Autem, dolorem nihil alias dolorum porro, quia sapiente, ad ipsam quidem iste aliquam sed non suscipit sunt quo quos quibusdam enim eum! Itaque earum, natus quas sed perferendis aspernatur officiis, illo, fugiat cumque beatae similique sit. Magni!
+                    Vi vet at vi “bryter” regler når vi bruker en monospaced font som hovedfonttype for hele nettsiden, 
+                    vi er også godt klar over at skyggeleggingen av fonten, og filteret som ligger på toppen av selve displayet gjør teksten mindre lesbar. 
+                    Dette er viktige avgjørelser for å gi en mest mulig tilnærming til hvordan informasjonen ville ha sett ut på en ordentlig retro monitor. 
+                    Vi kompenserer for dette ved å bruke en relativt stor font størrelse på alle plattformer.
+                </p>
+                <p class="textWithSpace">
+                    På grunn av det designet vi ønsket å få til møtte vi på noen utfordringer når det kom til å bruke et standard oppsett allá:
+                </p>
+                <!-- <aside id="adInfoContainer" class="hidden">
+                    <p id="adInfo"> -->
+                <p class="code" style="font-size: 1rem;">
+&lt;body&gt;
+&lt;header&gt;
+&lt;/header&gt;
+&lt;main&gt;
+&lt;main&gt;
+&lt;footer&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+                </p>
+
+                <p class="textWithSpace">
+                    Med et slikt oppsett klarte vi ikke å få Sony monitoren til å rendre som en bakgrunn og samtidig ha den bakgrunnsfargen vi ønsket å bruke. 
+                    Vår løsning ble å legge bildet av monitoren inn i sitt eget div-element og legge denne utenfor main og header elementet. 
+                    Vi vet at dette semantic sett ikke er optimalt, men det var den eneste måten vi fant ut av å løse designet på.
+                </p>
+                <p class="textWithSpace">
+                    Ellers er resten av nettsiden delt inn i ulike seksjoner dedikert til ulike deler av designet. 
+                    Vi bruker et par div elementer her og der for å kontrollere plasseringen av disse seksjonene.
+                </p>
+                <p class="textWithSpace">
+                    Vi har valgt å skjule &lt;aside&gt; innholdet for å gi nettsiden et renere look, 
+                    men også for å skape interaktivitet ved at brukerene faktisk må trykke på knappene til monitoren for å vise dette innholdet. 
+                    I &lt;aside&gt; innholdet har vi også brukt css innstillingen whitespace: pre; 
+                    for å gi Leif mest mulig frihet i hvordan han vil formatere det innholdet han ønsker å legge ut. 
+                    Kommentarene i HTML koden beskriver også hvor langt ut Leif kan skrive før han skriver utenfor parent-elementet som gir en mørkere bakgrunnen. 
+                </p>
+                <p class="textWithSpace">
+                    Alt av grafiske bilder har vært gjennom komprimering på tinypng.com for at senke lastetiden,
+                    og for at en ikke skal bruke opp datamengen sin på å laste inn siden.               
+                </p>
                 </section>
         </main>
-<!-- Slutt på iformasjon på selve displayet -->
+<!-- Slutt på informasjon på selve displayet -->
 
 
 <!-- Knappeseksjonen på monitoren inkludert postit lapper -->
