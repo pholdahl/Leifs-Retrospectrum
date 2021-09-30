@@ -36,13 +36,13 @@
                     OM NETTSIDEN
                 </h1>
                 <p class="textWithSpace">
-                    Denne nettsidens innhold og designuttrykket tar utgangspunkt i Leifs kjærlighet til retro datamaskiner. 
+                    Denne nettsidens innhold og designuttrykk tar utgangspunkt i Leifs kjærlighet til retro datamaskiner. 
                     Siden Leif fra før av, på eget initiativ, var i gang med en portfolio nettside som han allerede hadde fylt med masse innhold, 
                     ble utfordringen å presentere dette innholdet på en måte som virkelig smaker retro.
                 </p>
                 <p class="textWithSpace">
                     Vi gikk ikke gjennom noen form for strukturforslag på hvordan vi kan være sikker på å bruke mest mulig semantic tags i forkant av nettsidebyggingen. 
-                    Bruk av tags kom av seg selv, eller ble valgt bort på grunn av designet.
+                    Bruk av semantic tags kom av seg selv, eller ble valgt bort på bakgrunn av designet.
                 </p>
                 <p class="textWithSpace">
                     Hele uttrykket er bygd opp rundt bakgrunnsbildet av en gammel Sony Trinitron CRT monitor, et høyt aktet samlerobjekt blant retrofantaster. 
@@ -51,9 +51,9 @@
                     <hr>
                 <p class="textWithSpace">
                     Vi vet at vi “bryter” regler når vi bruker en monospaced font som hovedfonttype for hele nettsiden, 
-                    vi er også godt klar over at skyggeleggingen av fonten, og filteret som ligger på toppen av selve displayet gjør teksten mindre lesbar. 
-                    Dette er viktige avgjørelser for å gi en mest mulig tilnærming til hvordan informasjonen ville ha sett ut på en ordentlig retro monitor. 
-                    Vi kompenserer for dette ved å bruke en relativt stor font størrelse på alle plattformer.
+                    vi er også godt klar over at skyggeleggingen av teksten, og filteret som ligger på toppen av selve displayet gjør teksten mindre lesbar. 
+                    Vi har likevel valgt å gjøre det slik for å gi en mest mulig tilnærming til hvordan informasjonen ville ha sett ut på en ordentlig retro monitor. 
+                    Vi kompenserer ved å bruke en relativt stor font størrelse på alle plattformer.
                 </p>
                 <p class="textWithSpace">
                     På grunn av det designet vi ønsket å få til møtte vi på noen utfordringer når det kom til å bruke et standard oppsett allá:
@@ -73,7 +73,7 @@
 
                 <p class="textWithSpace">
                     Med et slikt oppsett klarte vi ikke å få Sony monitoren til å rendre som en bakgrunn og samtidig ha den bakgrunnsfargen vi ønsket å bruke. 
-                    Vår løsning ble å legge bildet av monitoren inn i sitt eget div-element og legge denne utenfor main og header elementet. 
+                    Vår løsning ble å legge bildet av monitoren inn i sitt eget div-element og lot det være parent-elementet til main og header. 
                     Vi vet at dette semantic sett ikke er optimalt, men det var den eneste måten vi fant ut av å løse designet på.
                 </p>
                 <p class="textWithSpace">
@@ -83,13 +83,13 @@
                 <p class="textWithSpace">
                     Vi har valgt å skjule &lt;aside&gt; innholdet for å gi nettsiden et renere look, 
                     men også for å skape interaktivitet ved at brukerene faktisk må trykke på knappene til monitoren for å vise dette innholdet. 
-                    I &lt;aside&gt; innholdet har vi også brukt css innstillingen whitespace: pre; 
+                    I &lt;aside&gt; innholdet har vi også brukt CSS innstillingen whitespace: pre; 
                     for å gi Leif mest mulig frihet i hvordan han vil formatere det innholdet han ønsker å legge ut. 
                     Kommentarene i HTML koden beskriver også hvor langt ut Leif kan skrive før han skriver utenfor parent-elementet som gir en mørkere bakgrunnen. 
                 </p>
                 <p class="textWithSpace">
                     Alt av grafiske bilder har vært gjennom komprimering på tinypng.com for at senke lastetiden,
-                    og for at en ikke skal bruke opp datamengen sin på å laste inn siden.               
+                    og for at en ikke skal bruke opp datamengden sin på å laste inn siden.               
                 </p>
                 </section>
         </main>
