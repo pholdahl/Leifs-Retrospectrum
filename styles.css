@@ -29,6 +29,8 @@
     --typeLengthMedium: 15.5rem;
     --typeLengthLong: 18rem;
     --typeLengthHeading: 18rem;
+    --postit-1Margin: -25px -11px 0 0;
+    --postit-2Margin: -31px 0 0 -20px;
 }
 
 * {
@@ -104,6 +106,7 @@ body {
   /* outline: purple solid 3px; */
   margin-bottom: var(--monitor-top-height);
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 .onMonitor::-webkit-scrollbar {
@@ -179,6 +182,7 @@ span.anchor {
   /* height: var(--screen-height); */
   /* flex: 1 1 auto; */
   overflow-y: scroll;
+  scrollbar-width: none;
   padding-left: 1rem;
   /* outline: yellow solid 3px; */
 
@@ -342,8 +346,7 @@ img {
 
 .postit-1 figcaption {
   position: absolute;
-  margin-top: -25px;
-  margin-right: -11px;
+  margin: var(--postit-1Margin);
   top: 50%;
   left: -50%;
   right: 0;
@@ -387,9 +390,11 @@ img {
 
 .postit-2 figcaption {
   position: absolute;
-  margin-top: -29px;
-  margin-left: -20px;
-  margin-right: auto;
+  margin-top: 29px;
+  margin: var(--postit-2Margin);
+  /* margin-top: -29px;
+  margin-left: -29px; */
+  /* margin-right: auto; */
   top: 50%;
   left: 50%;
   right: 0;
@@ -847,7 +852,7 @@ footer{
     to{border-right-color: var(--main-white);}
   }
 
-/* ---------------------------------- Hinder landscape mode ------------------------------- */
+/* -------------------------------- Hinder landscape mode ------------------------------- */
 
 .hidden {
     display: none;
@@ -984,10 +989,12 @@ and (-webkit-min-device-pixel-ratio: 1){
     :root {
       font-size: 1.8rem;
       --device-width: 768px;
-      --menu-height: 140px;
+      --menu-height: 150px;
       --screen-height: 560px;
       --monitor-button-width: 155px;
       --monitor-button-section-height: 8.9rem;
+      --postit-1Margin: -35px -60px 0 0;
+      --postit-2Margin: -60px 0 0 -12px;
     }
   }
 
@@ -1002,8 +1009,12 @@ and (-webkit-min-device-pixel-ratio: 1){
       --screen-height: 750px;
       --monitor-button-width: 155px;
       --monitor-button-section-height: 9.8rem;
+      --postit-1Margin: -40px -60px 0 0;
+      --postit-2Margin: -80px 0 0 -10px;
     }
   }
+
+/* ---------------------- Turn device query -------------------------- */
 
   @media only screen and 
   (min-width: 375px) and (max-width: 667px)
@@ -1020,16 +1031,13 @@ and (-webkit-min-device-pixel-ratio: 1){
       width: 100%;
       height: 100%;
     }
-
     body{
       width: 100%;
     }
-
     .hide {
       visibility: hidden;
       display: none;
     }
-
   }
 
   @media only screen and 
@@ -1047,11 +1055,9 @@ and (-webkit-min-device-pixel-ratio: 1){
       width: 100%;
       height: 100%;
     }
-
     body{
       width: 100%;
     }
-
     .hide {
       display: none;
     }
