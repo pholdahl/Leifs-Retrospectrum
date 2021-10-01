@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 :root {
-    --font-size: 1rem;
+    font-size: 1rem;
     --menu-size: 1.3rem;
     --headline-fonts: "Menlo","Arial", sans-serif;
     --body-fonts: "VT323", "Courier", "Roboto", "Arial", sans-serif;
@@ -60,7 +60,7 @@ body {
   box-shadow: 0 0 20px 20px black;
 }
 
-/* ------------------------------------ Background image -------------------------------------- */
+/* ------------------------------------ Background image Sony Trinitron -------------------------------------- */
 .bgcontainer {
   width: 100%;
   position: relative;
@@ -132,16 +132,22 @@ body {
 }
 
 header {
+  position: sticky;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  position: sticky;
   /* outline: solid green 3px; */
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
   width: 100%;
   /* outline: hotpink solid 3px; */
   background-color: var(--main-white);
@@ -149,7 +155,6 @@ header {
 }
 
 .navbar > ul {
-  margin-top: auto;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -411,6 +416,9 @@ img {
   z-index: 10;
 }
 
+
+
+/* ------------------------ Content beneath the monitor like the quotes and aditional information ----------------------- */
 .sectionC {
   font-size: 0.8rem;
   display: flex;
@@ -436,6 +444,9 @@ img {
   padding-bottom: 5%;
 }
 
+blockquote {
+  margin: 0 auto;
+}
 
 .quote {
   color: var(--main-white);
@@ -506,10 +517,6 @@ aside {
   height: 100%;
 }
 
-blockquote {
-  margin: 0 auto;
-}
-
 footer{
  margin-top: auto;
  text-align: center;
@@ -518,7 +525,7 @@ footer{
 }
 
 
-/* ---------------------------- Andre sider enn index ------------------------------- */
+/* ---------------------------- Other sites than index ------------------------------- */
 
 .firstArticle {
   text-decoration: underline;
@@ -852,8 +859,8 @@ footer{
     to{border-right-color: var(--main-white);}
   }
 
-/* -------------------------------- Hinder landscape mode ------------------------------- */
 
+/* -------------------------------- Hinder landscape mode ------------------------------- */
 .hidden {
     display: none;
   }
@@ -870,7 +877,6 @@ color: white;
 }
 
 /* ---------------------------------- Media Queries ------------------------------- */
-
 @media only screen 
 and (min-width: 1025px)
 and (-webkit-min-device-pixel-ratio: 1){
@@ -1014,8 +1020,8 @@ and (-webkit-min-device-pixel-ratio: 1){
     }
   }
 
-/* ---------------------- Turn device query -------------------------- */
 
+/* ---------------------- Turn device query -------------------------- */
   @media only screen and 
   (min-width: 375px) and (max-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
