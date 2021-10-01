@@ -507,6 +507,7 @@ footer {
 }
 
 .validation {
+  display: none;
   margin: 0 auto;
   width: 3rem;
 }
