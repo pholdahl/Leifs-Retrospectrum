@@ -137,19 +137,12 @@ body {
 
 header {
   position: sticky;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  position: sticky;
-  /* outline: solid green 3px; */
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
   width: 100%;
   /* outline: hotpink solid 3px; */
   background-color: var(--main-white);
@@ -281,7 +274,7 @@ img {
   align-self: flex-end;
   width: var(--monitor-button-width);
   height: var(--monitor-button-height);
-  background-color: rgba(255, 0, 0, 0.338);
+  /* background-color: rgba(255, 0, 0, 0.338); */
 }
 
 .blackButtons > .button {
@@ -308,7 +301,7 @@ img {
   border: none;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.082);
+  /* background: rgba(255, 255, 255, 0.082); */
   z-index: 1;
 }
 
@@ -477,6 +470,13 @@ aside {
   white-space: pre;
   text-align: left;
   font-size: 0.5rem;
+  padding-left: 0px;
+}
+
+.noCode {
+  white-space: pre;
+  text-align: left;
+  font-size: var(--body-fonts);
   padding-left: 0px;
 }
 
