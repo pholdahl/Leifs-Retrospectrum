@@ -163,6 +163,8 @@ fyr som heter Peder.</p>
 
 
     <footer class="hide">
+        <p>&copy; 2021</p>
+        <p>Pål Holdahl | Sander Hjermstad | Leif Kielland</p>
         <p class="validation">
             <a href="https://jigsaw.w3.org/css-validator/check/referer">
                 <img
@@ -170,8 +172,6 @@ fyr som heter Peder.</p>
                     alt="Valid CSS!" />
             </a>
         </p>
-        <p>&copy; 2021</p>
-        <p>Pål Holdahl | Sander Hjermstad | Leif Kielland</p>
     </footer>
     <audio src="https://www.bensound.com/bensound-music/bensound-moose.mp3"></audio>
     <div class="turndevice">
@@ -180,11 +180,13 @@ fyr som heter Peder.</p>
         </p>
     </div>
     <script>
-        // window.addEventListener("DOMContentLoaded", event => {
-        //     const audio = document.querySelector("audio");
-        //     audio.volume = 0.2;
-        //     audio.play();
-        //     });
+        const soundEffect = new Audio();
+        soundEffect.autoplay = true;
+        // onClick of first interaction on page before I need the sounds
+        // (This is a tiny MP3 file that is silent and extremely short - retrieved from https://bigsoundbank.com and then modified)
+        soundEffect.src = "sound/silent.mp3";
+        // later on when you actually want to play a sound at any point without user interaction
+        soundEffect.src = "sound/sound-of-old-computer.mp3";
     </script>
 </body>
 </html>

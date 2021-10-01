@@ -1,8 +1,8 @@
-window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.2;
-  audio.play();
-  });
+// window.addEventListener("DOMContentLoaded", event => {
+//   const audio = document.querySelector("audio");
+//   audio.volume = 0.2;
+//   audio.play();
+//   });
 function toggleHide() {
   document.getElementById("adInfoContainer").classList.add("showAdInfo");
   document.getElementById("adInfoContainer").classList.remove("hidden");
