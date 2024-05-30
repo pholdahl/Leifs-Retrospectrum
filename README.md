@@ -1,6 +1,7 @@
 ## Leifs Retrospectrum
 
 ![Project Logo](images/showcase/retrospectrum_0001.png)
+[To website](https://pholdahl.github.io/Leifs-Retrospectrum/)
 
 ## Table of Contents
 
@@ -14,8 +15,10 @@
 
 ## About the Project
 
-This website is a tribute to retro computers and gaming, created as part of an Inclusive Web Design assignment at OsloMet. The project was a collaborative effort by three students, with the majority of the web development work done by me. The content is based on one of the group members, Leif, and his love for retro computers. The goal was to present his portfolio in a way that truly reflects the retro aesthetic.
-
+This website is a tribute to retro computers and gaming, created as part of an [Inclusive Web Design](https://student.oslomet.no/studier/-/studieinfo/emne/DATA1200/2023/H%C3%98ST) 
+assignment at OsloMet. The project was a collaborative effort by three students, with the majority of the web development work done by me. The content is based on one of the group 
+members, Leif, and his love for retro computers. The goal was to present his portfolio in a way that truly reflects the retro aesthetic. There were no requirements to use JavaScript
+in this assignment, but we did so anyways. The website far exceedes what was expected for the assignment.
 
 ## Features
 
